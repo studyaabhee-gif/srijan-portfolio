@@ -80,7 +80,7 @@ class Metrics {
     }
     var cum = 0;
     final byYear = <YearPoint>[];
-    for (var y = 2004; y <= 2026; y++) {
+    for (var y = 2001; y <= 2026; y++) {
       final c = citesByYear[y] ?? 0;
       cum += c;
       byYear.add(YearPoint(y, pubsByYear[y] ?? 0, c, cum));

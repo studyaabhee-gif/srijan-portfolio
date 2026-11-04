@@ -39,8 +39,8 @@ func TestPublicationsFilterAndSort(t *testing.T) {
 	if err := json.Unmarshal(rec.Body.Bytes(), &body); err != nil {
 		t.Fatal(err)
 	}
-	if body.Count != 22 {
-		t.Fatalf("want 22 publications, got %d", body.Count)
+	if body.Count != 32 {
+		t.Fatalf("want 32 publications, got %d", body.Count)
 	}
 	if body.Items[0].ID != "p20" {
 		t.Fatalf("most cited should be p20, got %s", body.Items[0].ID)
@@ -56,10 +56,10 @@ func TestPublicationsFilterAndSort(t *testing.T) {
 
 func TestMetrics(t *testing.T) {
 	m := newAPI(t).Store.Metrics()
-	if m.HIndex != 7 || m.I10Index != 7 || m.TotalPublications != 22 {
+	if m.HIndex != 7 || m.I10Index != 7 || m.TotalPublications != 32 {
 		t.Fatalf("unexpected metrics h=%d i10=%d n=%d", m.HIndex, m.I10Index, m.TotalPublications)
 	}
-	if first, last := m.ByYear[0].Year, m.ByYear[len(m.ByYear)-1].Year; first != 2004 || last != 2026 {
+	if first, last := m.ByYear[0].Year, m.ByYear[len(m.ByYear)-1].Year; first != 2001 || last != 2026 {
 		t.Fatalf("year range %d-%d", first, last)
 	}
 }

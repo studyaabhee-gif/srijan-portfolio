@@ -9,7 +9,7 @@ API_BASE_URL ?= http://localhost:8080/api/v1
 ADMIN_TOKEN  ?= change-me
 
 .PHONY: help run-backend run-frontend run build build-backend build-frontend build-static \
-        serve sync-seed test analyze docker-up docker-down clean
+        serve sync-seed test analyze docker-up docker-down clean cv
 
 help:
 	@echo "make run-backend    Go API on :8080 (ADMIN_TOKEN=$(ADMIN_TOKEN))"
@@ -20,6 +20,7 @@ help:
 	@echo "make sync-seed      Copy backend/data/portfolio_seed.json into the Flutter assets"
 	@echo "make test           Go + Flutter tests;  make analyze: go vet + flutter analyze"
 	@echo "make docker-up      Build and start the single-container stack"
+	@echo "make cv            Rebuild the CV PDF from cv/cv.html"
 
 run-backend:
 	cd backend && ADMIN_TOKEN=$(ADMIN_TOKEN) go run .
@@ -64,3 +65,13 @@ docker-down:
 
 clean:
 	rm -rf backend/bin frontend/build
+
+# Rebuild the CV PDF from cv/cv.html with headless Chrome (needs internet for
+# the Google Fonts), then copy it to both places the site serves it from.
+CHROME ?= C:/Program Files/Google/Chrome/Application/chrome.exe
+cv:
+	go run cv/genpubs/main.go
+	"$(CHROME)" --headless=new --disable-gpu --no-pdf-header-footer --virtual-time-budget=15000 \
+	  --run-all-compositor-stages-before-draw --print-to-pdf="$(CURDIR)/cv/cv.pdf" "file:///$(CURDIR)/cv/cv.html"
+	cp cv/cv.pdf frontend/assets/docs/Prof_Dr_Srijan_Lal_Shrestha_CV.pdf
+	cp cv/cv.pdf backend/storage/cv/Prof_Dr_Srijan_Lal_Shrestha_CV.pdf

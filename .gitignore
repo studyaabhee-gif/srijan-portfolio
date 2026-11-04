@@ -20,3 +20,6 @@ frontend/.flutter-plugins-dependencies
 *.iml
 .DS_Store
 Thumbs.db
+
+# CV build output (copied into the site; see `make cv`)
+cv/cv.pdf

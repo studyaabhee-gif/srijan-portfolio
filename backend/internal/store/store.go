@@ -230,7 +230,7 @@ func ComputeMetrics(pubs []models.Publication, base models.MetricsBase) models.M
 		}
 	}
 
-	const firstYear, lastYear = 2004, 2026
+	const firstYear, lastYear = 2001, 2026
 	cum := 0
 	for y := firstYear; y <= lastYear; y++ {
 		yp := models.YearPoint{Year: y}

@@ -248,7 +248,7 @@ class _TrajectoryCardState extends State<_TrajectoryCard> {
           ));
 
     return _ChartCard(
-      title: 'Research trajectory, 2004–2026',
+      title: 'Research trajectory, 2001–2026',
       caption: _citations
           ? 'Cumulative citations of the listed papers, plotted by year of publication.'
           : 'Peer-reviewed publications per year (dated works on this site).',

@@ -22,15 +22,15 @@ void main() {
     final p = Profile.fromJson(raw['profile'] as Json);
     expect(p.emails, contains('srijan.shrestha@cds.tu.edu.np'));
     expect(p.link('orcid')?.handle, '0000-0002-9390-8215');
-    expect(p.honors, hasLength(3));
+    expect(p.honors, hasLength(4));
   });
 
   test('offline metrics match the Go backend', () {
     final m = Metrics.compute(pubs, Map<String, dynamic>.from(raw['metricsBase'] as Map));
-    expect(m.totalPublications, 22);
+    expect(m.totalPublications, 32);
     expect(m.hIndex, 7);
     expect(m.i10Index, 7);
-    expect(m.byYear.first.year, 2004);
+    expect(m.byYear.first.year, 2001);
     expect(m.byYear.last.year, 2026);
   });
 

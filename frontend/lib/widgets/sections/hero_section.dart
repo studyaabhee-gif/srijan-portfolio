@@ -17,6 +17,7 @@ IconData linkIcon(String kind) => switch (kind) {
       'sciprofiles' => Icons.badge_outlined,
       'journal' => Icons.menu_book_outlined,
       'institution' => Icons.account_balance_outlined,
+      'ranking' => Icons.leaderboard_outlined,
       _ => Icons.link,
     };
 

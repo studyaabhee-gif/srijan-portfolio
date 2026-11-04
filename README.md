@@ -44,7 +44,7 @@ cd frontend; flutter run -d chrome --dart-define=API_BASE_URL=http://localhost:8
 
 Every image slot that has no file yet shows a branded placeholder card with the **exact path to drop the file at**, so you can read it straight off the page.
 
-> The images currently in `frontend/assets/images/` (portrait, awards, NJS cover, TU logo, office photo) and the CV PDF are **placeholders**. Replace them with real files **using the same file names**.
+> Replace any photo with a better one **using the same file name**. The NJS cover (`frontend/assets/images/logos/njs_cover.jpg`) is a stand-in mock-up, so swap in the real journal cover when you have it.
 
 | What | Where to put the file | Rebuild? |
 |---|---|---|
@@ -53,7 +53,7 @@ Every image slot that has no file yet shows a branded placeholder card with the 
 | NJS cover / TU logo | `frontend/assets/images/logos/njs_cover.jpg`, `tu_logo.jpg` | yes |
 | Pre-listed gallery slots | the paths shown on the placeholder cards, e.g. `frontend/assets/images/gallery/research/fieldwork_01.jpg` | yes |
 | **Any new gallery photo** | `backend/storage/gallery/<conferences\|lectures\|research\|milestones>/any_name.jpg` | **no, it appears live** |
-| CV | `frontend/assets/docs/…CV.pdf` **and** `backend/storage/cv/…CV.pdf` | frontend: yes |
+| CV | edit `cv/cv.html`, then run `make cv` (rebuilds the PDF and copies it to `frontend/assets/docs/` and `backend/storage/cv/`) | frontend: yes |
 
 Photos dropped into `backend/storage/gallery/` are auto-discovered. The caption comes from the file name, so `nast_keynote-2019.jpg` becomes "Nast keynote 2019". To give a photo a proper caption, date and location, upload it through the API instead:
 
@@ -71,11 +71,11 @@ To add a new **bundled** gallery entry, add an item to `gallery` in `backend/dat
 All text, including the bio, timeline, honours, publications, teaching and collaborators, lives in **`backend/data/portfolio_seed.json`**. After editing it, run `make sync-seed` so the Flutter fallback gets the same data. A test fails if the two copies drift apart. The backend reads the on-disk seed at startup, so a restart is enough and no rebuild is needed.
 
 **Please verify before publishing:**
-- `metricsBase.phdSupervised` / `mscSupervised` are `null` because the numbers weren't available. The dashboard shows "—" until you fill them in.
-- Author **order** for co-authored papers is inferred and not verified. Check it against each paper, because BibTeX export uses it.
+- `metricsBase.phdSupervised` is 3 (one PhD supervised and two co-supervised to completion, per ORCID). `mscSupervised` is still `null`, so the dashboard shows "—" for it until you fill it in.
+- Author order and volume/page details were checked against Crossref (the DOI registry) and the ORCID record. Papers without a DOI (p11, p13, p28, p30, p32) still rely on the supplied details.
 - Citation counts are the approximate "N+" figures supplied. h-index and i10-index are **computed from those counts**, so they are lower bounds and are labelled as such on the site.
-- Publication "summaries" are one-line descriptions written from the titles, not the published abstracts. Replace them with real abstracts where you can.
-- No DOIs are recorded yet. Add a `doi` field to a publication and its "View source" button links to `doi.org`. Until then, buttons fall back to NepJOL or a Google Scholar title search.
+- Publication summaries for p01, p05, p07, p08, p09 and p10 are condensed from the published abstracts (via SciProfiles); the rest are written from the titles. Replace them with real abstracts where you can.
+- DOIs are recorded for every paper that has one, so "View source" links to `doi.org`. Papers without a DOI fall back to NepJOL or a Google Scholar title search.
 
 ## REST API (`/api/v1`)
 
@@ -84,7 +84,7 @@ All text, including the bio, timeline, honours, publications, teaching and colla
 | GET | `/health` | liveness |
 | GET | `/profile` | bio, appointments, education, honours, timeline, links, collaborators |
 | GET | `/publications` | `?search=` `?category=` `?year=` `?sort=citations\|year\|year_asc` |
-| GET | `/metrics` | totals, h/i10 index, by-year output and citations (2004–2026), by category, by domain |
+| GET | `/metrics` | totals, h/i10 index, by-year output and citations (2001–2026), by category, by domain |
 | GET | `/gallery` | `?category=`; seed + uploaded + auto-discovered photos, plus a `grouped` map |
 | POST | `/gallery/upload` | multipart (`file`, `caption`, `category`, `date?`, `location?`); needs `X-Admin-Token`; 10 MB; JPEG/PNG/WebP/GIF checked by content sniffing |
 | POST | `/contact` | JSON (`name`, `email`, `role`, `subject`, `message`, `organization?`); validated; stored in `storage/db/contacts.json` |
