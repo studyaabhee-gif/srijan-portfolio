@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "name": "Prof. Dr. Srijan Lal Shrestha",
+    "shortName": "Srijan Lal Shrestha",
+    "credentials": "PhD in Statistics (Tribhuvan University, Nepal)",
+    "crest": "PhD (Statistics)",
+    "title": "Professor of Statistics & Former Head of Department",
+    "headline": "Turning environmental and public-health data into evidence for Nepal.",
+    "institution": "Tribhuvan University",
+    "department": "Central Department of Statistics (CDS)",
+    "faculty": "Institute of Science and Technology (IoST)",
+    "address": "Sanepa, Lalitpur, Nepal",
+    "officeAddress": "Central Department of Statistics, IoST, Tribhuvan University, Kirtipur, Kathmandu, Nepal",
+    "location": "Kirtipur / Lalitpur, Kathmandu Valley, Nepal",
+    "emails": ["shresthasrijanlal@gmail.com", "srijan.shrestha@cds.tu.edu.np"],
+    "mobile": "+977-9841927128",
+    "phone": "+977-01-4331710",
+    "portrait": "assets/images/profile/hero_portrait.jpg",
+    "bio": [
+      "Prof. Dr. Srijan Lal Shrestha is Professor of Statistics and former Head of the Central Department of Statistics (CDS), Institute of Science and Technology, Tribhuvan University. He has taught and supervised MSc and PhD scholars in statistics at TU for more than two decades.",
+      "His research applies environmetrics, generalized linear models, time series and distributed lag methods to air pollution, climate-sensitive disease, drought and rainfall risk, and subnational human development in Nepal. He has collaborated with the WHO Urban Health Initiative and the Nepal Health Research Council.",
+      "He serves as Editor-in-Chief of the Nepalese Journal of Statistics and as a member of the IoST Ethical Review Committee. He received the NABIL Science and Technology Award (2016) and the Nepal Bidhya Bhushan \"KA\" (2009)."
+    ],
+    "badges": [
+      "Professor of Statistics • Tribhuvan University",
+      "Editor-in-Chief • Nepalese Journal of Statistics",
+      "Former Head of Department • CDS"
+    ],
+    "links": [
+      {"kind": "scholar", "label": "Google Scholar", "url": "https://scholar.google.com/citations?user=HeJ3_HEAAAAJ&hl=en"},
+      {"kind": "researchgate", "label": "ResearchGate", "url": "https://www.researchgate.net/profile/Srijan-Shrestha-3"},
+      {"kind": "orcid", "label": "ORCID", "url": "https://orcid.org/0000-0002-9390-8215", "handle": "0000-0002-9390-8215"},
+      {"kind": "linkedin", "label": "LinkedIn", "url": "https://www.linkedin.com/in/srijan-lal-shrestha-4b017637/"},
+      {"kind": "sciprofiles", "label": "SciProfiles", "url": "https://sciprofiles.com/profile/SrijanLalShrestha"},
+      {"kind": "journal", "label": "Nepalese Journal of Statistics", "url": "https://www.nepjol.info/index.php/NJS"},
+      {"kind": "institution", "label": "TU CDS Faculty Page", "url": "https://tucds.edu.np/faculty-staff/"}
+    ],
+    "kpis": [
+      {"value": "20+", "label": "Years at TU"},
+      {"value": "35+", "label": "Co-Authors Globally"},
+      {"value": "500+", "label": "Citations"},
+      {"value": "NABIL & Bidhya Bhushan", "label": "Laureate"}
+    ],
+    "appointments": [
+      {"role": "Professor of Statistics", "organization": "Central Department of Statistics, IoST, Tribhuvan University", "period": "Present", "current": true},
+      {"role": "Editor-in-Chief", "organization": "Nepalese Journal of Statistics (NJS)", "period": "Present", "current": true},
+      {"role": "Member, Ethical Review Committee", "organization": "Institute of Science and Technology (IoST), Tribhuvan University", "period": "Present", "current": true},
+      {"role": "Head of Department", "organization": "Central Department of Statistics (CDS), Tribhuvan University", "period": "Former", "current": false}
+    ],
+    "education": [
+      {"degree": "PhD", "field": "Statistics", "institution": "Tribhuvan University, Nepal"}
+    ],
+    "editorialBoards": [
+      {"role": "Editor-in-Chief", "journal": "Nepalese Journal of Statistics (NJS)", "url": "https://www.nepjol.info/index.php/NJS"}
+    ],
+    "honors": [
+      {
+        "title": "NABIL Science and Technology Award",
+        "date": "December 2016",
+        "year": 2016,
+        "conferredBy": "Nepal Academy of Science and Technology (NAST)",
+        "citation": "For outstanding research contributions in environmental statistics, air quality modeling and public-health burden estimation in Nepal.",
+        "image": "assets/images/awards/nabil_award.jpg"
+      },
+      {
+        "title": "Nepal Bidhya Bhushan \"KA\" (A-Class National Academic Medal)",
+        "date": "February 2009",
+        "year": 2009,
+        "conferredBy": "The President of Nepal",
+        "citation": "For doctoral excellence in Statistics.",
+        "image": "assets/images/awards/bidhya_bhushan.jpg"
+      },
+      {
+        "title": "Long Service Certificate (दीर्घ सेवा प्रमाण-पत्र)",
+        "date": "",
+        "conferredBy": "Tribhuvan University",
+        "citation": "Recognising long and dedicated service to Tribhuvan University.",
+        "image": "assets/images/gallery/milestones/tu_long_service_certificate.jpg"
+      }
+    ],
+    "timeline": [
+      {"period": "Doctorate", "title": "PhD in Statistics", "organization": "Tribhuvan University", "description": "Doctoral research in statistics at Tribhuvan University, followed by a long career teaching MSc and PhD scholars at the Central Department of Statistics.", "kind": "education"},
+      {"period": "Feb 2009", "title": "Nepal Bidhya Bhushan \"KA\"", "organization": "Conferred by the President of Nepal", "description": "A-Class National Academic Medal for doctoral excellence in Statistics.", "kind": "honor"},
+      {"period": "Dec 2016", "title": "NABIL Science & Technology Award", "organization": "Nepal Academy of Science and Technology (NAST)", "description": "For research in environmental statistics, air quality modeling and public-health burden estimation.", "kind": "honor"},
+      {"period": "Former", "title": "Head of Department", "organization": "Central Department of Statistics, Tribhuvan University", "description": "Led the Central Department of Statistics, IoST, overseeing its MSc and PhD programmes in statistics.", "kind": "leadership"},
+      {"period": "Present", "title": "Editor-in-Chief & Ethics Committee Member", "organization": "Nepalese Journal of Statistics · IoST, TU", "description": "Editor-in-Chief of the Nepalese Journal of Statistics and member of the IoST Ethical Review Committee.", "kind": "leadership"}
+    ],
+    "teaching": [
+      {"subject": "Environmetrics", "levels": ["MSc", "PhD"]},
+      {"subject": "Nonparametric Modeling", "levels": ["MSc", "PhD"]},
+      {"subject": "Multivariate Analysis", "levels": ["MSc", "PhD"]},
+      {"subject": "Sampling Design", "levels": ["MSc", "PhD"]},
+      {"subject": "Generalized Linear Models (GLM)", "levels": ["MSc", "PhD"]},
+      {"subject": "Time Series Analysis", "levels": ["MSc", "PhD"]}
+    ],
+    "researchPillars": [
+      {"title": "Environmetrics & Air Pollution Modeling", "summary": "PM2.5 and PM10 ambient and indoor air pollution modeling in Kathmandu Valley and rural Nepal, using curvilinear and gamma GLMs.", "keywords": ["PM2.5", "PM10", "indoor air", "gamma GLM"]},
+      {"title": "Environmental Burden of Disease & Epidemiology", "summary": "Distributed lag models for respiratory hospital admissions, mortality, childhood diarrheal disease and COVID-19 trends, with the WHO Urban Health Initiative and NHRC.", "keywords": ["distributed lag", "mortality", "COVID-19", "burden of disease"]},
+      {"title": "Climate Change & Hydrological Modeling", "summary": "Seasonally separated logistic and probabilistic drought and rainfall forecasting models over the Bagmati River Basin.", "keywords": ["drought", "rainfall", "logistic models", "Bagmati"]},
+      {"title": "Socio-Economic & HDI Methodology", "summary": "Five-dimensional unequally weighted mapping and cluster analysis for subnational HDI assessment in Nepal, plus ecological footprint modeling.", "keywords": ["HDI", "cluster analysis", "ecological footprint"]},
+      {"title": "Theoretical & Mathematical Statistics", "summary": "Censored negative exponential mixed distributions, nonparametric scatter plot smoothers, and categorical regression with optimal scaling.", "keywords": ["mixed distributions", "smoothers", "optimal scaling"]}
+    ],
+    "supervision": {
+      "intro": "Prof. Shrestha supervises MSc and PhD research in Statistics at the Central Department of Statistics, IoST, Tribhuvan University. Prospective scholars with an interest in applied and environmental statistics are welcome to get in touch with a short research outline.",
+      "areas": [
+        "Environmetrics and air quality modeling (PM2.5 / PM10)",
+        "Environmental epidemiology and burden of disease",
+        "Climate, drought and rainfall risk modeling",
+        "Time series and distributed lag models",
+        "Generalized linear and nonparametric models",
+        "Human development indices and socio-economic measurement"
+      ],
+      "steps": [
+        "Read two or three recent papers in the area you want to work on.",
+        "Prepare a one-page outline: question, data source and the methods you expect to use.",
+        "Send it through the contact form or by email, mentioning MSc or PhD."
+      ]
+    },
+    "collaborators": [
+      {"name": "Tribhuvan University", "short": "TU", "kind": "Home institution", "country": "Nepal", "hub": true},
+      {"name": "Nepal Health Research Council", "short": "NHRC", "kind": "Public health research", "country": "Nepal"},
+      {"name": "WHO Urban Health Initiative", "short": "WHO UHI", "kind": "International agency", "country": "Global"},
+      {"name": "Harvard University", "short": "Harvard", "kind": "University", "country": "USA"},
+      {"name": "University of Maryland", "short": "UMD", "kind": "University", "country": "USA"},
+      {"name": "Kathmandu University", "short": "KU", "kind": "University", "country": "Nepal"}
+    ]
+  },
+  "metricsBase": {
+    "yearsOfService": 20,
+    "coAuthors": 35,
+    "reportedCitations": 500,
+    "phdSupervised": null,
+    "mscSupervised": null,
+    "note": "Headline figures are approximate. h-index and i10-index are computed from the citation counts in this seed file, so they are lower bounds; Google Scholar is the authoritative source."
+  },
+  "publications": [
+    {"id": "p01", "title": "Enhancement of Human Development Assessment Model: An Insight from Bagmati Province, Nepal", "authors": ["I.P. Banjade", "S.L. Shrestha"], "journal": "Nepalese Journal of Statistics", "year": 2025, "month": 12, "category": "HDI & Socio-Economic Modeling", "domain": "HDI & Socio-Economics", "keywords": ["human development", "HDI", "Bagmati Province", "composite index"], "summary": "Proposes refinements to the human development assessment model and applies them to districts of Bagmati Province.", "url": "https://www.nepjol.info/index.php/NJS"},
+    {"id": "p02", "title": "Five-dimensional unequally weighted mapping methodology for measuring the level of human development: an application in Bagmati Province, Nepal", "authors": ["I.P. Banjade", "S.L. Shrestha"], "journal": "Asia-Pacific Journal of Regional Science", "year": 2024, "month": 11, "category": "HDI & Socio-Economic Modeling", "domain": "HDI & Socio-Economics", "keywords": ["HDI", "unequal weighting", "mapping", "regional science"], "summary": "Introduces a five-dimensional, unequally weighted mapping method for measuring subnational human development, illustrated for Bagmati Province."},
+    {"id": "p03", "title": "Modeling the ecological footprint and assessing its influential factors: A systematic review", "authors": ["S.R. Nepal", "S.L. Shrestha"], "journal": "Environmental Science and Pollution Research", "year": 2024, "month": 8, "category": "Environmetrics & Sustainability", "domain": "Environmetrics", "keywords": ["ecological footprint", "systematic review", "sustainability"], "summary": "Systematic review of statistical approaches to modeling the ecological footprint and the factors that drive it."},
+    {"id": "p04", "title": "Assessing Human Development in Nepal through Descriptive and Cluster Analysis: Progress and Disparities", "authors": ["I.P. Banjade", "S.L. Shrestha"], "journal": "Applied Research in Quality of Life", "volume": "19", "issue": "3", "pages": "945–958", "year": 2024, "month": 1, "category": "HDI & Socio-Economic Modeling", "domain": "HDI & Socio-Economics", "keywords": ["HDI", "cluster analysis", "disparities", "Nepal"], "summary": "Uses descriptive statistics and cluster analysis to track progress and regional disparities in human development across Nepal."},
+    {"id": "p05", "title": "Burden of Respiratory Diseases Attributable to Household Air Pollution in Nepal: National and Provincial Estimates", "authors": ["S.L. Shrestha"], "journal": "Nepalese Journal of Statistics", "year": 2022, "month": 12, "category": "Environmental Epidemiology", "domain": "Epidemiology", "keywords": ["household air pollution", "burden of disease", "respiratory disease", "provinces"], "summary": "Estimates the national and provincial burden of respiratory disease attributable to household air pollution in Nepal.", "url": "https://www.nepjol.info/index.php/NJS"},
+    {"id": "p06", "title": "Quantifying effects of meteorological parameters on air pollution in Kathmandu valley through regression models", "authors": ["S.L. Shrestha"], "journal": "Environmental Monitoring and Assessment", "volume": "194", "issue": "10", "articleNo": "684", "year": 2022, "month": 8, "citations": 15, "category": "Environmetrics & Air Quality", "domain": "Environmetrics", "keywords": ["meteorology", "PM2.5", "regression", "Kathmandu Valley"], "summary": "Regression models quantifying how temperature, humidity, wind and rainfall shape air pollution levels in Kathmandu Valley."},
+    {"id": "p07", "title": "Effects of Climatic Factors on Diarrheal Diseases among Children below 5 Years of Age at National and Subnational Levels in Nepal: An Ecological Study", "authors": ["M. Dhimal", "S.L. Shrestha", "et al."], "journal": "International Journal of Environmental Research and Public Health", "volume": "19", "issue": "10", "articleNo": "6138", "year": 2022, "month": 5, "citations": 58, "category": "Climate & Public Health", "domain": "Climate Modeling", "keywords": ["diarrhea", "under-five children", "climate", "ecological study"], "summary": "Ecological study linking temperature and rainfall to diarrheal disease in children under five, nationally and by subnational region."},
+    {"id": "p08", "title": "Curvilinear and gamma generalized linear models for modeling the dependency of air pollution levels on meteorological conditions in Kathmandu valley", "authors": ["S.L. Shrestha"], "journal": "Research Square (WHO Urban Health Initiative study)", "year": 2022, "month": 1, "category": "Statistical Methodology & GLM", "domain": "Environmetrics", "keywords": ["gamma GLM", "curvilinear regression", "air pollution", "WHO UHI"], "summary": "Compares curvilinear and gamma GLM specifications for the dependence of air pollution on meteorological conditions."},
+    {"id": "p09", "title": "Assessment of Factors Associated with Indoor Air Pollution using Multinomial Logistic Regression: A Case Study of Barbardiya Municipality", "authors": ["C.R. Bhandari", "S.L. Shrestha"], "journal": "Nepalese Journal of Statistics", "year": 2021, "month": 12, "category": "Environmetrics & Air Quality", "domain": "Environmetrics", "keywords": ["indoor air pollution", "multinomial logistic regression", "household survey"], "summary": "Multinomial logistic regression of household factors associated with indoor air pollution levels in Barbardiya Municipality.", "url": "https://www.nepjol.info/index.php/NJS"},
+    {"id": "p10", "title": "Air pollution exposure and health impacts in the Kathmandu valley", "authors": ["S.L. Shrestha"], "journal": "International Journal of Environment and Health", "year": 2021, "month": 1, "category": "Environmental Epidemiology", "domain": "Epidemiology", "keywords": ["exposure", "health impacts", "Kathmandu Valley"], "summary": "Reviews population exposure to air pollution in Kathmandu Valley and its associated health impacts."},
+    {"id": "p11", "title": "Analysis of ambient particulate air pollution and health in Nepal", "authors": ["S.L. Shrestha"], "journal": "Journal of Global Ecology and Environment", "volume": "12", "issue": "4", "pages": "14–29", "year": 2021, "category": "Environmetrics & Air Quality", "domain": "Environmetrics", "keywords": ["particulate matter", "ambient air", "health"], "summary": "Analysis of ambient particulate matter levels in Nepal and their relationship with health outcomes."},
+    {"id": "p12", "title": "Trend Analysis, Modelling and Impact Assessment of COVID-19 in Nepal", "authors": ["S. Bhandary", "S.L. Shrestha", "R.P. Khatiwada", "et al."], "journal": "Journal of Institute of Science and Technology", "volume": "25", "issue": "2", "pages": "1–8", "year": 2020, "citations": 16, "category": "Biostatistics & Epidemiology", "domain": "Epidemiology", "keywords": ["COVID-19", "trend analysis", "epidemic modeling"], "summary": "Trend analysis and statistical modeling of the early COVID-19 epidemic in Nepal, with an assessment of its impact."},
+    {"id": "p13", "title": "Assessment of Ambient Particulate Air Pollution and its Attribution to Burden of Disease in Kathmandu Valley, Nepal: A Review", "authors": ["S.L. Shrestha"], "journal": "Environmental Analysis & Ecology Studies", "volume": "4", "issue": "4", "year": 2018, "month": 11, "category": "Environmental Epidemiology", "domain": "Epidemiology", "keywords": ["PM10", "burden of disease", "review"], "summary": "Review of ambient particulate pollution in Kathmandu Valley and the share of disease burden attributable to it."},
+    {"id": "p14", "title": "A probabilistic approach for assessment of future drought in Bagmati River Basin, Nepal", "authors": ["R.M. Shrestha", "S.L. Shrestha", "A.B. Sthapit"], "journal": "Nepalese Journal of Statistics", "volume": "2", "pages": "75–88", "year": 2018, "category": "Climate & Hydrological Modeling", "domain": "Climate Modeling", "keywords": ["drought", "probability models", "Bagmati River Basin"], "summary": "Probabilistic assessment of future drought occurrence in the Bagmati River Basin.", "url": "https://www.nepjol.info/index.php/NJS"},
+    {"id": "p15", "title": "Statistical Modeling of Health Effects on Climate-Sensitive Variables and Assessment of Environmental Burden of Diseases Attributable to Climate Change in Nepal", "authors": ["S.L. Shrestha", "I.L. Shrestha", "N. Shrestha", "R.D. Joshi"], "journal": "Environmental Modeling & Assessment", "volume": "22", "issue": "5", "pages": "459–472", "year": 2017, "category": "Climate & Public Health", "domain": "Climate Modeling", "keywords": ["climate change", "burden of disease", "climate-sensitive disease"], "summary": "Models health outcomes against climate-sensitive variables and estimates the environmental burden of disease attributable to climate change in Nepal."},
+    {"id": "p16", "title": "Particulate air pollution and daily mortality in Kathmandu Valley, Nepal: associations and distributed lag", "authors": ["S.L. Shrestha"], "journal": "The Open Atmospheric Science Journal", "volume": "6", "issue": "Suppl 1", "pages": "62–70", "year": 2012, "citations": 12, "category": "Time Series & Distributed Lag", "domain": "Epidemiology", "keywords": ["daily mortality", "distributed lag", "PM10", "time series"], "summary": "Time series analysis of daily mortality and particulate pollution, including distributed lag effects."},
+    {"id": "p17", "title": "Categorical regression models with optimal scaling for predicting indoor air pollution concentrations inside kitchens in Nepalese households", "authors": ["S.L. Shrestha"], "journal": "Nepal Journal of Science and Technology", "volume": "10", "pages": "205–211", "year": 2009, "citations": 52, "category": "Statistical Methodology & GLM", "domain": "Environmetrics", "keywords": ["optimal scaling", "categorical regression", "kitchen air pollution"], "summary": "Categorical regression with optimal scaling to predict indoor air pollution concentrations in household kitchens."},
+    {"id": "p18", "title": "Nonparametric distribution fitting of age at first marriage of Nepalese women through scatter plot smoother", "authors": ["S.L. Shrestha", "G. Shrestha"], "journal": "Nepal Journal of Science and Technology", "volume": "9", "pages": "179–186", "year": 2008, "category": "Nonparametric Modeling", "domain": "Theoretical Statistics", "keywords": ["nonparametric", "scatter plot smoother", "age at marriage"], "summary": "Fits the distribution of age at first marriage among Nepalese women with a nonparametric scatter plot smoother."},
+    {"id": "p19", "title": "Time series modelling of respiratory hospital admissions and geometrically weighted distributed lag effects from ambient particulate air pollution within Kathmandu Valley, Nepal", "authors": ["S.L. Shrestha"], "journal": "Environmental Modeling & Assessment", "volume": "12", "issue": "3", "pages": "239–251", "year": 2007, "month": 7, "citations": 24, "category": "Time Series & Distributed Lag", "domain": "Epidemiology", "keywords": ["hospital admissions", "geometric distributed lag", "PM10", "time series"], "summary": "Time series model of respiratory hospital admissions with geometrically weighted distributed lag effects of particulate pollution."},
+    {"id": "p20", "title": "Indoor air pollution from biomass fuels and respiratory health of the exposed population in Nepalese households", "authors": ["S.L. Shrestha", "I.L. Shrestha"], "journal": "International Journal of Occupational and Environmental Health", "volume": "11", "issue": "2", "pages": "150–160", "year": 2005, "citations": 181, "category": "Environmental Epidemiology", "domain": "Epidemiology", "keywords": ["biomass fuel", "indoor air pollution", "respiratory health"], "summary": "Household study of indoor air pollution from biomass fuels and respiratory health among exposed household members."},
+    {"id": "p21", "title": "Censored Negative Exponential Distribution as a Mixed Distribution and Derivation of Its Moments", "authors": ["S.L. Shrestha"], "journal": "Theoretical statistics research paper", "category": "Theoretical Statistics", "domain": "Theoretical Statistics", "keywords": ["censoring", "negative exponential", "mixed distribution", "moments"], "summary": "Treats the censored negative exponential distribution as a mixed distribution and derives its moments."},
+    {"id": "p22", "title": "Seasonally Separated Logistic Models to Assess the Impact of Climate Variables on Occurrence of Rainfall over the Bagmati River Basin of Nepal", "authors": ["R.M. Shrestha", "S.L. Shrestha", "A.B. Sthapit"], "journal": "Research paper", "category": "Climate & Hydrological Modeling", "domain": "Climate Modeling", "keywords": ["logistic regression", "rainfall occurrence", "seasonality", "Bagmati River Basin"], "summary": "Season-specific logistic models for the effect of climate variables on rainfall occurrence over the Bagmati River Basin."}
+  ],
+  "gallery": [
+    {"id": "g-tu-long-service", "category": "milestones", "caption": "Receiving Tribhuvan University's Long Service Certificate (दीर्घ सेवा प्रमाण-पत्र)", "location": "Tribhuvan University", "asset": "assets/images/gallery/milestones/tu_long_service_certificate.jpg"},
+    {"id": "g-natconf-2017", "category": "conferences", "caption": "National Conference on Statistics and its Applications: \"Quality Data and Appropriate Statistical Methods for Prosperous Nepal\"", "date": "3–4 September 2017", "location": "Kirtipur, Kathmandu", "asset": "assets/images/gallery/conferences/national_conference_2017.jpg"},
+    {"id": "g-njs-vol7", "category": "milestones", "caption": "Release & Dissemination Program of the Nepalese Journal of Statistics, Volume 7 (print version)", "date": "12 March 2024", "location": "Central Department of Statistics, TU, Kirtipur", "asset": "assets/images/gallery/milestones/njs_vol7_release_2024.jpg"},
+    {"id": "g-phd-festival-posters", "category": "conferences", "caption": "With fellow participants at the PhD Festival poster session", "location": "Tribhuvan University, Kirtipur", "asset": "assets/images/gallery/conferences/phd_festival_2023_poster_session.jpg"},
+    {"id": "g-colleagues-felicitation", "category": "lectures", "caption": "With colleagues at a felicitation programme", "asset": "assets/images/gallery/lectures/colleagues_felicitation.jpg"},
+    {"id": "g-cds-plaque", "category": "lectures", "caption": "Felicitating a colleague at the Central Department of Statistics", "location": "Central Department of Statistics, TU, Kirtipur", "asset": "assets/images/gallery/lectures/cds_felicitation_plaque.jpg"},
+    {"id": "g-cds-scarf", "category": "lectures", "caption": "Honouring a colleague at the Central Department of Statistics", "location": "Central Department of Statistics, TU, Kirtipur", "asset": "assets/images/gallery/lectures/cds_felicitation_scarf.jpg"},
+    {"id": "g-office-at-work", "category": "lectures", "caption": "At work in his office", "asset": "assets/images/gallery/lectures/office_at_work.jpg"},
+    {"id": "g-cds-building", "category": "lectures", "caption": "Central Department of Statistics, Tribhuvan University", "location": "Kirtipur, Kathmandu", "asset": "assets/images/gallery/lectures/cds_building.jpg"},
+    {"id": "g-cds-entrance", "category": "lectures", "caption": "Entrance of the Central Department of Statistics", "location": "Kirtipur, Kathmandu", "asset": "assets/images/gallery/lectures/cds_building_entrance.png"},
+    {"id": "g-phd-festival-2023", "category": "conferences", "caption": "Plenary session at PhD Festival 2080: \"Insights to Features of Nonparametric Regression Modeling with Illustrations\"", "date": "9–10 October 2023", "location": "Central Department of Statistics, TU, Kirtipur", "asset": "assets/images/gallery/conferences/phd_festival_2023_plenary.jpg"},
+    {"id": "g-seminar-talk", "category": "conferences", "caption": "Addressing a seminar audience", "asset": "assets/images/gallery/conferences/seminar_talk.jpg"},
+    {"id": "g-cds-appreciation", "category": "lectures", "caption": "Receiving a token of appreciation at the Central Department of Statistics", "location": "Central Department of Statistics, TU, Kirtipur", "asset": "assets/images/gallery/lectures/cds_token_of_appreciation.jpg"},
+    {"id": "g-garden", "category": "personal", "caption": "Among the gardens", "asset": "assets/images/gallery/personal/garden_portrait.jpg"},
+    {"id": "g-terrace", "category": "personal", "caption": "A quiet moment outdoors", "asset": "assets/images/gallery/personal/terrace_portrait.jpg"},
+    {"id": "g-heritage", "category": "personal", "caption": "Visiting a heritage temple", "asset": "assets/images/gallery/personal/heritage_temple_visit.jpg"},
+    {"id": "g-award-nabil", "category": "milestones", "caption": "NABIL Science and Technology Award", "date": "December 2016", "location": "Nepal Academy of Science and Technology, Lalitpur", "asset": "assets/images/awards/nabil_award.jpg"},
+    {"id": "g-award-bidhya", "category": "milestones", "caption": "Nepal Bidhya Bhushan \"KA\" conferred by the President of Nepal", "date": "February 2009", "location": "Kathmandu", "asset": "assets/images/awards/bidhya_bhushan.jpg"},
+    {"id": "g-njs-cover", "category": "milestones", "caption": "Nepalese Journal of Statistics, edited as Editor-in-Chief", "location": "Central Department of Statistics, TU", "asset": "assets/images/logos/njs_cover.jpg"}
+  ]
+}

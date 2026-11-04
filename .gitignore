@@ -1,0 +1,22 @@
+# Secrets
+.env
+
+# Go
+backend/server
+backend/bin/
+backend/*.exe
+
+# Runtime data: contact enquiries and upload metadata (personal data, don't commit)
+backend/storage/db/
+
+# Flutter
+frontend/build/
+frontend/.dart_tool/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+
+# Editors / OS
+.idea/
+*.iml
+.DS_Store
+Thumbs.db

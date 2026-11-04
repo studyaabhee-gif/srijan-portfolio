@@ -1,0 +1,9 @@
+**/.git
+**/.idea
+**/.vscode
+**/.dart_tool
+frontend/build
+frontend/.flutter-plugins*
+backend/storage/db
+*.exe
+.env

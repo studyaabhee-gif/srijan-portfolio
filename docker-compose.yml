@@ -1,0 +1,19 @@
+services:
+  portfolio:
+    build: .
+    image: srijan-portfolio:latest
+    container_name: srijan-portfolio
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      # Required to enable POST /api/v1/gallery/upload. Put it in a .env file.
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-}
+      # Only needed if the web app is hosted on another origin.
+      CORS_ORIGINS: ${CORS_ORIGINS:-*}
+      # Set to "true" behind Cloudflare/nginx so rate limits use the real client IP.
+      TRUST_PROXY: ${TRUST_PROXY:-false}
+    volumes:
+      # Photos you drop into backend/storage/gallery/<category>/ in VS Code
+      # appear on the site immediately; uploads and enquiries persist here.
+      - ./backend/storage:/app/storage

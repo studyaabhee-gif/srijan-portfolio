@@ -1,0 +1,41 @@
+name: srijan_portfolio
+description: "Academic & professional portfolio of Prof. Dr. Srijan Lal Shrestha, Professor of Statistics, Tribhuvan University."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.0
+
+dependencies:
+  dio: ^5.11.1
+  fl_chart: ^1.3.0
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^3.4.3
+  flutter_web_plugins:
+    sdk: flutter
+  go_router: ^18.1.2
+  google_fonts: ^8.2.1
+  url_launcher: ^6.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Drop new photos into these folders (keep the exact file names listed in
+  # assets/data/portfolio_seed.json, or add new entries there). See README.md.
+  assets:
+    - assets/data/
+    - assets/docs/
+    - assets/images/profile/
+    - assets/images/awards/
+    - assets/images/logos/
+    - assets/images/gallery/conferences/
+    - assets/images/gallery/lectures/
+    - assets/images/gallery/research/
+    - assets/images/gallery/milestones/
+    - assets/images/gallery/personal/
