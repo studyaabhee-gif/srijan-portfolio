@@ -1,0 +1,60 @@
+# Builds the Flutter site (seed-only, no backend) and publishes it to
+# GitHub Pages at https://srijanlalshrestha.com.np on every push to main.
+name: Deploy site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 3.44.0
+          channel: stable
+          cache: true
+
+      - name: Sync content from the backend seed
+        run: cp ../backend/data/portfolio_seed.json assets/data/portfolio_seed.json
+
+      - run: flutter pub get
+      - run: flutter test
+
+      - name: Build static site
+        run: flutter build web --release --base-href / --dart-define=API_BASE_URL=
+
+      # GitHub Pages has no rewrite rules: serving the app as 404.html makes
+      # clean URLs like /research load the app instead of a 404 page.
+      - name: SPA fallback
+        run: cp build/web/index.html build/web/404.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: frontend/build/web
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

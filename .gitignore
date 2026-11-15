@@ -23,3 +23,5 @@ Thumbs.db
 
 # CV build output (copied into the site; see `make cv`)
 cv/cv.pdf
+cv/Domain_Registration_Cover_Letter.pdf
+cv/Domain_Registration_Cover_Letter.png
