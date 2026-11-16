@@ -142,7 +142,7 @@
       {"period": "Former", "title": "Head of Department", "organization": "Central Department of Statistics, Tribhuvan University", "description": "Led the Central Department of Statistics, IoST, overseeing its MSc and PhD programmes in statistics.", "kind": "leadership"},
       {"period": "Feb 2022", "title": "Adjunct Faculty", "organization": "Chandigarh University, Punjab, India", "description": "Invited adjunct faculty position.", "kind": "leadership"},
       {"period": "Dec 2022", "title": "Academic Editor, PLOS ONE", "organization": "Public Library of Science", "description": "Invited to the editorial board of PLOS ONE, where he also reviews manuscripts.", "kind": "leadership"},
-      {"period": "Present", "title": "Editor-in-Chief & Ethics Committee Member", "organization": "Nepalese Journal of Statistics · IoST, TU", "description": "Editor-in-Chief of the Nepalese Journal of Statistics and member of the IoST Ethical Review Committee.", "kind": "leadership"}
+      {"period": "Present", "title": "Editor-in-Chief & Senior Visiting Professor", "organization": "Nepalese Journal of Statistics · MPhil and PhD programmes", "description": "Editor-in-Chief of the Nepalese Journal of Statistics, Senior Visiting Professor in MPhil and PhD programmes, and member of the Governing Board of the School of Mathematical Sciences, TU.", "kind": "leadership"}
     ],
     "teaching": [
       {"subject": "Environmetrics", "levels": ["MSc", "PhD"]},

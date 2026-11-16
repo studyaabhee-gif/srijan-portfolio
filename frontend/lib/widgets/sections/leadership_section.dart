@@ -7,6 +7,7 @@ import '../../theme/app_theme.dart';
 import '../common/actions.dart';
 import '../common/layout.dart';
 import '../common/smart_image.dart';
+import 'gallery_section.dart' show MasonryLayout;
 
 class LeadershipSection extends ConsumerWidget {
   const LeadershipSection({super.key});
@@ -45,8 +46,11 @@ class LeadershipSection extends ConsumerWidget {
             const SizedBox(height: 56),
             Text('Honours & recognition', style: context.text.headlineSmall),
             const SizedBox(height: 20),
-            ResponsiveGrid(
+            // Cards keep their own height and fill the shorter column, so a
+            // text-only honour is never stretched beside a tall photo card.
+            MasonryLayout(
               columns: size.isMobile ? 1 : 2,
+              gap: 20,
               children: [for (final h in p.honors) _HonorCard(honor: h)],
             ),
           ]);
@@ -250,12 +254,22 @@ class _HonorCard extends StatelessWidget {
     return Card(
       clipBehavior: Clip.antiAlias,
       child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+        // Whole photo, never cropped; very tall (portrait) photos are capped
+        // and centred on a soft backdrop so one card can't dwarf the rest.
         if (honor.image != null)
-          SmartImage(
-            asset: honor.image,
-            dropPath: 'frontend/${honor.image}',
-            label: honor.title,
-            natural: true,
+          ColoredBox(
+            color: p.surfaceAlt,
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxHeight: 360),
+              child: SmartImage(
+                asset: honor.image,
+                dropPath: 'frontend/${honor.image}',
+                label: honor.title,
+                natural: true,
+                fit: BoxFit.contain,
+                alignment: Alignment.center,
+              ),
+            ),
           ),
         Padding(
           padding: const EdgeInsets.all(24),
