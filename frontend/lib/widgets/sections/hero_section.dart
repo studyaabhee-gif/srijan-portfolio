@@ -86,7 +86,7 @@ class _Intro extends StatelessWidget {
       ConstrainedBox(
         constraints: const BoxConstraints(maxWidth: 620),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          for (final para in profile.bio.take(2))
+          for (final para in profile.bio)
             Padding(
               padding: const EdgeInsets.only(bottom: 12),
               child: Text(para, style: context.text.bodyLarge?.copyWith(color: p.muted)),
