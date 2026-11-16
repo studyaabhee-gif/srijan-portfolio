@@ -38,7 +38,9 @@ jobs:
       - run: flutter test
 
       - name: Build static site
-        run: flutter build web --release --base-href / --dart-define=API_BASE_URL=
+        # BUILD_ID versions links to files replaced in place (the CV) so
+        # browsers fetch the new copy after each deploy.
+        run: flutter build web --release --base-href / --dart-define=API_BASE_URL= --dart-define=BUILD_ID=${{ github.sha }}
 
       # GitHub Pages has no rewrite rules: serving the app as 404.html makes
       # clean URLs like /research load the app instead of a 404 page.

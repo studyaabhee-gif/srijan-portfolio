@@ -15,4 +15,8 @@ abstract final class AppConfig {
 
   static const cvFileName = 'Prof_Dr_Srijan_Lal_Shrestha_CV.pdf';
   static const cvAsset = 'assets/docs/$cvFileName';
+
+  /// Changes on every deploy (CI passes the commit SHA), so links to files
+  /// that are replaced in place, like the CV, never hit a stale browser cache.
+  static const buildId = String.fromEnvironment('BUILD_ID', defaultValue: 'dev');
 }

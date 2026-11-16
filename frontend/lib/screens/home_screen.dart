@@ -125,10 +125,12 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
   void _downloadCv() {
     final repo = ref.read(repositoryProvider);
-    final uri = repo.isLive
+    final path = repo.isLive
         ? AppConfig.backendUri('/static/cv/${AppConfig.cvFileName}')
         // Flutter web serves bundled assets under /assets/<asset path>.
         : Uri.base.resolve('/assets/${AppConfig.cvAsset}');
+    // Version tag so a newly deployed CV is never served from cache.
+    final uri = path.replace(queryParameters: {'v': AppConfig.buildId});
     openLink(context, uri);
   }
 
