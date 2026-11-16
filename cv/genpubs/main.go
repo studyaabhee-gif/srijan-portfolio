@@ -60,8 +60,9 @@ var groups = []struct {
 	{0, "2001 – 2009"},
 }
 
-// authors renders an author list as a sentence, marking S.L. Shrestha.
-func authors(list []string) string {
+// authors renders the author list followed by the year in the usual
+// reference style, "A. Author, B. Author (2022).", marking S.L. Shrestha.
+func authors(list []string, year int) string {
 	out := make([]string, len(list))
 	for i, a := range list {
 		if a == me {
@@ -71,6 +72,9 @@ func authors(list []string) string {
 		}
 	}
 	line := strings.Join(out, ", ")
+	if year > 0 {
+		return fmt.Sprintf("%s (%d).", line, year)
+	}
 	// "et al." already ends the sentence; avoid "et al..".
 	if strings.HasSuffix(line, ".") {
 		return line
@@ -89,7 +93,7 @@ func sentence(s string) string {
 func pubItem(p publication) string {
 	var b strings.Builder
 	b.WriteString(`    <li><div>`)
-	b.WriteString(authors(p.Authors))
+	b.WriteString(authors(p.Authors, p.Year))
 	b.WriteString(` <span class="t">` + html.EscapeString(sentence(p.Title)) + `</span> `)
 	b.WriteString(`<span class="j">` + html.EscapeString(p.Journal) + `</span>`)
 	if p.Volume != "" {
@@ -119,7 +123,7 @@ func pubItem(p publication) string {
 
 func reportItem(r report) string {
 	return fmt.Sprintf("    <li><div>%s <span class=\"t\">%s</span> %s.</div><div class=\"y\">%d</div></li>\n",
-		authors(r.Authors), html.EscapeString(sentence(r.Title)), html.EscapeString(r.Publisher), r.Year)
+		authors(r.Authors, r.Year), html.EscapeString(sentence(r.Title)), html.EscapeString(r.Publisher), r.Year)
 }
 
 func replaceBetween(doc, name, body string) string {

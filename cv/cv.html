@@ -7,514 +7,286 @@
 <meta name="description" content="Curriculum Vitae of Prof. Dr. Srijan Lal Shrestha, Professor of Statistics, Tribhuvan University">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@500;600&display=block" rel="stylesheet">
+<!-- Upright weights only: italic font files embed badly in some PDF viewers. -->
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=block" rel="stylesheet">
 <style>
   :root {
-    --navy: #0F172A;
-    --navy-2: #1B2540;
-    --gold: #B8902A;
-    --gold-light: #E2BE5A;
-    --maroon: #8C2232;
-    --ink: #1E2433;
-    --muted: #5B6476;
-    --rule: #E4DED2;
-    --paper-tint: #F8F5EF;
-    --serif: 'Playfair Display', 'Noto Serif Devanagari', Georgia, serif;
-    --sans: 'Source Sans 3', 'Noto Serif Devanagari', 'Segoe UI', sans-serif;
+    --ink: #111827;
+    --muted: #4B5563;
+    --rule: #9CA3AF;
+    --serif: 'Source Serif 4', 'Noto Serif Devanagari', Georgia, 'Times New Roman', serif;
   }
 
   @page {
     size: A4;
-    margin: 16mm 17mm 18mm 17mm;
+    margin: 18mm 19mm 18mm 19mm;
     @bottom-left {
-      content: "Prof. Dr. Srijan Lal Shrestha  ·  Curriculum Vitae";
-      font: 500 7.5pt 'Source Sans 3', sans-serif;
-      color: #8A8F9C;
-      letter-spacing: 0.3pt;
+      content: "Srijan Lal Shrestha · Curriculum Vitae";
+      font: 400 8pt 'Source Serif 4', Georgia, serif;
+      color: #6B7280;
     }
     @bottom-right {
-      content: counter(page) " / " counter(pages);
-      font: 600 7.5pt 'Source Sans 3', sans-serif;
-      color: #B8902A;
+      content: "Page " counter(page) " of " counter(pages);
+      font: 400 8pt 'Source Serif 4', Georgia, serif;
+      color: #6B7280;
     }
   }
-  /* Page 1 is a full-bleed designed cover; its margins live in .cover. */
-  @page :first {
-    margin: 0;
-    @bottom-left { content: none; }
-    @bottom-right { content: none; }
-  }
-  .cover {
-    height: 297mm;
-    padding: 0 17mm 13mm;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    break-after: page;
-  }
-  .cover > * { flex-shrink: 0; }
-  .cover .grow { flex: 1 1 0; }
-  .cover-foot {
-    display: flex; justify-content: space-between; align-items: center;
-    border-top: 0.3mm solid var(--rule); padding-top: 3mm;
-    font: 500 7.5pt var(--sans); color: #8A8F9C; letter-spacing: 0.3pt;
-  }
-  .cover-foot b { color: var(--gold); font-weight: 600; }
 
   * { box-sizing: border-box; }
-  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  body {
-    margin: 0;
-    font-family: var(--sans);
-    font-size: 9.6pt;
-    line-height: 1.5;
-    color: var(--ink);
-    background: #fff;
-  }
-  p { margin: 0 0 6pt; }
+  body { margin: 0; font-family: var(--serif); font-size: 10.4pt; line-height: 1.42; color: var(--ink); background: #fff; }
+  p { margin: 0 0 2.4mm; }
   a { color: inherit; text-decoration: none; }
+  b, strong { font-weight: 600; }
 
-  /* ---------- Cover header ---------- */
-  .masthead {
-    margin: 0 -17mm 0;
-    padding: 14mm 17mm 10mm;
-    background: var(--navy);
-    background-image:
-      radial-gradient(circle at 88% 10%, rgba(226,190,90,0.16), transparent 42%),
-      linear-gradient(160deg, #0F172A 0%, #16213A 100%);
-    color: #F1EDE6;
-    display: grid;
-    grid-template-columns: 1fr 39mm;
-    gap: 9mm;
-    align-items: center;
-    position: relative;
-  }
-  .masthead::after {
-    content: "";
-    position: absolute; left: 0; right: 0; bottom: 0; height: 1.6mm;
-    background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
-  }
-  .crest-row { display: flex; align-items: center; gap: 3mm; margin-bottom: 5mm; }
-  .crest-row img {
-    width: 10mm; height: 10mm; border-radius: 50%;
-    background: #fff; padding: 1mm; object-fit: contain;
-    border: 0.4mm solid var(--gold-light);
-  }
-  .crest-row span {
-    font: 600 7.6pt var(--sans); letter-spacing: 1.6pt; text-transform: uppercase; color: var(--gold-light);
-    line-height: 1.35;
-  }
-  .eyebrow { font: 600 7.8pt var(--sans); letter-spacing: 2.4pt; text-transform: uppercase; color: var(--gold-light); margin-bottom: 2mm; }
-  .masthead h1 {
-    font: 700 27pt/1.05 var(--serif);
-    margin: 0 0 2.5mm;
-    letter-spacing: -0.2pt;
-  }
-  .masthead .role { font: 500 12pt var(--serif); color: #E9E2D3; margin-bottom: 1mm; }
-  .masthead .inst { font: 400 9.4pt var(--sans); color: #B9C0CF; }
-  .masthead .headline {
-    margin-top: 5mm; padding-left: 3.5mm; border-left: 0.6mm solid var(--gold-light);
-    font: 500 11pt/1.4 var(--serif); color: #F6F1E7;
-  }
-  /* Head-and-shoulders crop of the full-length portrait. */
-  .portrait {
-    width: 39mm; height: 49mm;
-    border-radius: 2mm;
-    border: 0.6mm solid var(--gold-light);
-    box-shadow: 0 2mm 6mm rgba(0,0,0,0.35);
-    background: url("../frontend/assets/images/profile/hero_portrait.jpg") 52% 15.5% / 235% auto no-repeat #1B2540;
-  }
-
-  .contact-bar {
-    margin: 0 -17mm 6mm;
-    padding: 3.2mm 17mm;
-    background: var(--paper-tint);
-    border-bottom: 0.3mm solid var(--rule);
-    display: grid;
-    grid-template-columns: 1.25fr 1fr 1.05fr;
-    gap: 2mm 6mm;
-    font-size: 8.4pt;
-    color: var(--ink);
-  }
-  .contact-bar div { display: flex; gap: 2mm; align-items: baseline; }
-  .contact-bar b { font: 700 6.8pt var(--sans); letter-spacing: 1.2pt; text-transform: uppercase; color: var(--gold); min-width: 12mm; }
+  /* ---------- Header ---------- */
+  header { text-align: center; padding-bottom: 3.5mm; border-bottom: 0.5mm solid var(--ink); margin-bottom: 5mm; }
+  header h1 { font-size: 20pt; font-weight: 700; letter-spacing: 0.4pt; margin: 0 0 1mm; }
+  header .title { font-size: 11pt; font-weight: 600; margin-bottom: 0.6mm; }
+  header .addr { font-size: 9.8pt; color: var(--muted); }
+  header .contact { font-size: 9.4pt; margin-top: 1.6mm; }
+  header .contact span + span::before { content: "  |  "; color: var(--rule); white-space: pre; }
 
   /* ---------- Sections ---------- */
+  section { margin-bottom: 4.6mm; }
   h2 {
-    font: 600 13.5pt var(--serif);
-    color: var(--navy);
-    margin: 0 0 3mm;
-    display: flex; align-items: center; gap: 3mm;
+    font-size: 10.6pt; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2pt;
+    margin: 0 0 2.2mm; padding-bottom: 0.8mm; border-bottom: 0.25mm solid var(--rule);
     break-after: avoid;
   }
-  h2::before { content: ""; width: 7mm; height: 0.6mm; background: var(--gold); flex: none; }
-  h2::after { content: ""; flex: 1; height: 0.25mm; background: var(--rule); }
-  section { margin-bottom: 6.5mm; }
-  .cover section { margin-bottom: 4mm; }
-  .lead { font-size: 10pt; line-height: 1.6; color: #2A3142; }
-  .lead strong { color: var(--navy); }
 
-  .kpis {
-    display: grid; grid-template-columns: repeat(5, 1fr);
-    border: 0.3mm solid var(--rule); border-radius: 2mm;
-    margin: 1mm 0 6mm;
-    overflow: hidden;
-  }
-  .kpi { padding: 3.2mm 4mm; border-right: 0.3mm solid var(--rule); }
-  .kpi:last-child { border-right: 0; }
-  .kpi .v { font: 700 17pt/1 var(--serif); color: var(--navy); }
-  .kpi .v small { font-size: 10pt; color: var(--gold); margin-left: 0.5mm; }
-  .kpi .l { font: 600 7pt var(--sans); letter-spacing: 1.1pt; text-transform: uppercase; color: var(--muted); margin-top: 1.4mm; }
+  /* Dated entries: date column + details */
+  .row { display: grid; grid-template-columns: 30mm 1fr; column-gap: 4mm; margin-bottom: 1.9mm; break-inside: avoid; }
+  .row .d { color: var(--muted); font-size: 9.8pt; padding-top: 0.2mm; }
+  .row .w { font-weight: 600; }
+  .row .o { color: var(--ink); }
+  .row .n { color: var(--muted); font-size: 9.6pt; }
 
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 9mm; }
+  ul { margin: 0; padding-left: 5mm; }
+  ul li { margin-bottom: 1mm; }
+  .cols2 { columns: 2; column-gap: 9mm; }
+  .cols2 li { break-inside: avoid; }
 
-  /* entries */
-  .entry { display: grid; grid-template-columns: 21mm 1fr; gap: 3mm; padding: 2.1mm 0; border-bottom: 0.25mm dotted #D6CFC0; break-inside: avoid; }
-  .entry:last-child { border-bottom: 0; }
-  .when { font: 700 7.6pt var(--sans); letter-spacing: 0.8pt; text-transform: uppercase; color: var(--gold); padding-top: 0.6mm; }
-  .when.now { color: var(--maroon); }
-  .what { font: 600 10.2pt/1.3 var(--serif); color: var(--navy); }
-  .where { color: var(--muted); font-size: 8.9pt; }
-  .note { font-size: 8.8pt; color: #3B4252; margin-top: 0.6mm; }
+  table.kv { border-collapse: collapse; width: 100%; font-size: 10pt; }
+  table.kv td { padding: 0.8mm 0; vertical-align: top; }
+  table.kv td:first-child { width: 62mm; white-space: nowrap; color: var(--muted); }
 
-  /* honours */
-  .honour { display: grid; grid-template-columns: 30mm 1fr; gap: 4.5mm; align-items: center; padding: 2.6mm 0; border-bottom: 0.25mm dotted #D6CFC0; break-inside: avoid; }
-  .honour:last-child { border-bottom: 0; }
-  .honour img { width: 30mm; height: 20mm; object-fit: cover; border-radius: 1.4mm; border: 0.3mm solid var(--rule); }
-  .honour .what { font-size: 10.6pt; }
-  .tag { display: inline-block; font: 700 6.8pt var(--sans); letter-spacing: 1pt; text-transform: uppercase; color: var(--gold); border: 0.3mm solid #E5D3A2; background: #FBF5E6; border-radius: 10mm; padding: 0.3mm 2.2mm; margin-bottom: 1mm; }
-
-  /* research pillars */
-  .pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5mm; }
-  .pillar { border: 0.3mm solid var(--rule); border-left: 0.9mm solid var(--gold); border-radius: 1.4mm; padding: 3mm 3.6mm; break-inside: avoid; background: #FFFEFB; }
-  .pillar.wide { grid-column: 1 / -1; }
-  .pillar .n { font: 700 7.4pt var(--sans); color: var(--gold); letter-spacing: 1.2pt; }
-  .pillar h3 { font: 600 10.4pt/1.25 var(--serif); color: var(--navy); margin: 0.6mm 0 1.2mm; }
-  .pillar p { font-size: 8.8pt; color: #3B4252; margin: 0 0 1.6mm; }
-  .chips { display: flex; flex-wrap: wrap; gap: 1.2mm; }
-  .chip { font: 600 7pt var(--sans); color: var(--navy-2); background: #EEF1F6; border-radius: 10mm; padding: 0.3mm 2mm; }
-
-  /* lists */
-  ul.clean { list-style: none; margin: 0; padding: 0; }
-  ul.clean li { position: relative; padding-left: 4.2mm; margin-bottom: 1.4mm; }
-  ul.clean li::before { content: ""; position: absolute; left: 0; top: 2.1mm; width: 1.5mm; height: 1.5mm; background: var(--gold); transform: rotate(45deg); }
-
-  table.courses { width: 100%; border-collapse: collapse; font-size: 9pt; }
-  table.courses td { padding: 1.5mm 0; border-bottom: 0.25mm dotted #D6CFC0; }
-  table.courses td:last-child { text-align: right; white-space: nowrap; }
-  .lvl { font: 700 6.8pt var(--sans); letter-spacing: 0.8pt; color: #fff; background: var(--navy); border-radius: 0.8mm; padding: 0.3mm 1.6mm; margin-left: 1mm; }
-
-  .partners { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.4mm; }
-  .partner { border: 0.3mm solid var(--rule); border-radius: 1.4mm; padding: 2.2mm 3mm; break-inside: avoid; }
-  .partner b { font: 600 9.2pt/1.25 var(--serif); color: var(--navy); display: block; }
-  .partner span { font-size: 7.8pt; color: var(--muted); }
-
-  /* publications */
-  .pub-intro { font-size: 8.6pt; color: var(--muted); margin: -1mm 0 3mm; }
+  /* ---------- Publications (filled by cv/genpubs) ---------- */
   ol.pubs { list-style: none; margin: 0; padding: 0; counter-reset: pub; }
-  ol.pubs li { counter-increment: pub; display: grid; grid-template-columns: 9mm 1fr 12mm; gap: 1.5mm; padding: 1.9mm 0; border-bottom: 0.25mm dotted #D6CFC0; break-inside: avoid; font-size: 9pt; line-height: 1.42; }
-  ol.pubs li::before { content: "[" counter(pub) "]"; font: 700 8pt var(--sans); color: var(--gold); padding-top: 0.3mm; }
-  ol.pubs .t { font-weight: 600; color: var(--navy); }
-  ol.pubs .j { color: var(--maroon); font-weight: 500; }
-  ol.pubs .me { font-weight: 700; color: var(--ink); text-decoration: underline; text-decoration-color: var(--gold); text-decoration-thickness: 0.3mm; text-underline-offset: 0.6mm; }
-  ol.pubs .y { font: 700 8.4pt var(--sans); color: var(--navy); text-align: right; padding-top: 0.2mm; }
-  table.ranks { width: 100%; border-collapse: collapse; font-size: 8.6pt; }
-  table.ranks th { font: 700 6.8pt var(--sans); letter-spacing: 0.9pt; text-transform: uppercase; color: #fff; background: var(--navy); padding: 1.8mm 2mm; text-align: right; }
-  table.ranks th:first-child, table.ranks td:first-child { text-align: left; }
-  table.ranks td { padding: 1.7mm 2mm; border-bottom: 0.25mm dotted #D6CFC0; text-align: right; white-space: nowrap; }
-  table.ranks td:first-child { font: 600 9pt var(--serif); color: var(--navy); white-space: normal; }
-  table.ranks tr.hi td { background: #FBF5E6; }
-  table.ranks b { color: var(--maroon); }
-  ol.pubs .doi { font: 500 7.6pt var(--sans); color: #6B7385; white-space: nowrap; }
+  ol.pubs li { counter-increment: pub; display: grid; grid-template-columns: 9mm 1fr; margin-bottom: 1.9mm; break-inside: avoid; font-size: 9.9pt; }
+  ol.pubs li::before { content: counter(pub) "."; color: var(--muted); }
+  ol.pubs li .y { display: none; }
+  ol.pubs .t { font-weight: 400; }
+  ol.pubs .j { font-weight: 600; }
+  ol.pubs .me { font-weight: 700; }
+  ol.pubs .doi { color: var(--muted); font-size: 9pt; white-space: nowrap; }
   ol.pubs.reports { counter-reset: rep; }
   ol.pubs.reports li { counter-increment: rep; }
-  ol.pubs.reports li::before { content: "R" counter(rep); }
-  .yeargroup { font: 700 7.4pt var(--sans); letter-spacing: 1.6pt; text-transform: uppercase; color: var(--maroon); margin: 3.4mm 0 0.4mm; break-after: avoid; }
+  ol.pubs.reports li::before { content: counter(rep) "."; }
+  .yeargroup { font-size: 9.6pt; font-weight: 600; color: var(--muted); margin: 2.4mm 0 1.2mm; break-after: avoid; }
+  .note { font-size: 9.2pt; color: var(--muted); margin-bottom: 2mm; }
 
-  /* gallery page */
-  .photos { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm 5mm; }
-  figure { margin: 0; break-inside: avoid; }
-  figure img { width: 100%; height: 60mm; object-fit: cover; border-radius: 1.6mm; display: block; border: 0.3mm solid var(--rule); }
-  figure.tall img { object-position: 50% 30%; }
-  figcaption { font-size: 8.2pt; line-height: 1.4; color: #3B4252; margin-top: 1.6mm; }
-  figcaption b { font: 600 9pt var(--serif); color: var(--navy); display: block; }
-
-  .profiles { display: grid; grid-template-columns: 1fr 1fr; gap: 1.3mm 9mm; font-size: 8.7pt; }
-  .profiles div { display: flex; justify-content: space-between; gap: 3mm; border-bottom: 0.25mm dotted #D6CFC0; padding: 1.2mm 0; }
-  .profiles b { font-weight: 600; color: var(--navy); white-space: nowrap; }
-  .profiles span { color: var(--muted); text-align: right; word-break: break-all; }
-
-  .page-break { break-before: page; }
-  .closing { margin-top: 6mm; padding-top: 4mm; border-top: 0.6mm solid var(--gold); display: flex; justify-content: space-between; align-items: flex-end; font-size: 8.4pt; color: var(--muted); }
-  .closing .sig { font: 600 13pt var(--serif); color: var(--navy); }
+  .declaration { margin-top: 7mm; break-inside: avoid; }
+  .sign { display: flex; justify-content: space-between; margin-top: 14mm; font-size: 10pt; }
+  .sign .line { border-top: 0.3mm solid var(--ink); padding-top: 1mm; min-width: 60mm; text-align: center; }
 </style>
 </head>
 <body>
 
-<!-- ================= PAGE 1 ================= -->
-<div class="cover">
-<header class="masthead">
-  <div>
-    <div class="crest-row">
-      <img src="../frontend/assets/images/logos/tu_logo.jpg" alt="">
-      <span>Tribhuvan University<br>Central Department of Statistics</span>
-    </div>
-    <div class="eyebrow">Curriculum Vitae</div>
-    <h1>Prof. Dr. Srijan Lal Shrestha</h1>
-    <div class="role">Professor of Statistics &amp; Former Head of Department</div>
-    <div class="inst">Central Department of Statistics, Institute of Science and Technology, Tribhuvan University &nbsp;·&nbsp; Editor-in-Chief, Nepalese Journal of Statistics</div>
-    <div class="headline">Turning environmental and public-health data into evidence for Nepal.</div>
+<header>
+  <h1>Prof. Dr. Srijan Lal Shrestha</h1>
+  <div class="title">Professor of Statistics</div>
+  <div class="addr">Central Department of Statistics, Institute of Science and Technology, Tribhuvan University, Kirtipur, Kathmandu, Nepal</div>
+  <div class="contact">
+    <span>+977-9841927128</span><span>+977-01-4331710</span><span><a href="mailto:shresthasrijanlal@gmail.com">shresthasrijanlal@gmail.com</a></span><span><a href="mailto:srijan.shrestha@cds.tu.edu.np">srijan.shrestha@cds.tu.edu.np</a></span>
   </div>
-  <div class="portrait" role="img" aria-label="Portrait of Prof. Dr. Srijan Lal Shrestha"></div>
+  <div class="contact">
+    <span>Sanepa, Lalitpur, Nepal</span><span>ORCID: <a href="https://orcid.org/0000-0002-9390-8215">0000-0002-9390-8215</a></span>
+  </div>
 </header>
-
-<div class="contact-bar">
-  <div><b>Office</b><span>Central Department of Statistics, IoST, TU, Kirtipur, Kathmandu</span></div>
-  <div><b>Email</b><span><a href="mailto:shresthasrijanlal@gmail.com">shresthasrijanlal@gmail.com</a><br><a href="mailto:srijan.shrestha@cds.tu.edu.np">srijan.shrestha@cds.tu.edu.np</a></span></div>
-  <div><b>Phone</b><span>+977-9841927128 (mobile)<br>+977-01-4331710</span></div>
-  <div><b>Home</b><span>Sanepa, Lalitpur, Nepal</span></div>
-  <div><b>ORCID</b><span><a href="https://orcid.org/0000-0002-9390-8215">0000-0002-9390-8215</a></span></div>
-  <div><b>Web</b><span><a href="https://www.nepjol.info/index.php/NJS">nepjol.info/index.php/NJS</a></span></div>
-</div>
 
 <section>
   <h2>Profile</h2>
-  <p class="lead">Professor of Statistics and former <strong>Head of the Central Department of Statistics (CDS)</strong>, Institute of Science and Technology, Tribhuvan University, where he has taught since 1992 and has been Professor since 2013. His research applies <strong>environmetrics, generalized linear models, time series and distributed lag methods</strong> to air pollution, climate-sensitive disease, drought and rainfall risk, population and human development in Nepal, with the WHO Urban Health Initiative, the Nepal Health Research Council and the Nepal Academy of Science and Technology.</p>
-  <p class="lead">He is <strong>Editor-in-Chief of the Nepalese Journal of Statistics</strong>, an <strong>Academic Editor of PLOS ONE</strong> and Adjunct Faculty at Chandigarh University, India. He received the <strong>NABIL Science and Technology Award (2016)</strong> and the <strong>Nepal Bidhya Bhushan “KA” (2009)</strong>, and is ranked <strong>10th in Nepal in Mathematical Sciences</strong> by the AD Scientific Index 2026.</p>
-</section>
-
-<div class="kpis">
-  <div class="kpi"><div class="v">30<small>+</small></div><div class="l">Years at Tribhuvan University</div></div>
-  <div class="kpi"><div class="v">32</div><div class="l">Journal articles &amp; papers</div></div>
-  <div class="kpi"><div class="v">457</div><div class="l">Citations (AD Sci. Index)</div></div>
-  <div class="kpi"><div class="v">#10</div><div class="l">in Nepal, Mathematical Sciences</div></div>
-  <div class="kpi"><div class="v">3</div><div class="l">PhDs supervised to completion</div></div>
-</div>
-
-<div class="two-col">
-  <section>
-    <h2>Appointments</h2>
-    <div class="entry"><div class="when now">2013 –</div><div><div class="what">Professor of Statistics</div><div class="where">Central Department of Statistics, IoST, Tribhuvan University</div></div></div>
-    <div class="entry"><div class="when now">2022 –</div><div><div class="what">Adjunct Faculty (invited)</div><div class="where">Chandigarh University, Mohali, Punjab, India</div></div></div>
-    <div class="entry"><div class="when">Former</div><div><div class="what">Head of Department</div><div class="where">Central Department of Statistics, Tribhuvan University</div></div></div>
-    <div class="entry"><div class="when">1992 –</div><div><div class="what">Faculty member</div><div class="where">Central Department of Statistics, Tribhuvan University</div></div></div>
-  </section>
-  <section>
-    <h2>Education</h2>
-    <div class="entry"><div class="when">2007</div><div><div class="what">PhD in Statistics</div><div class="where">Tribhuvan University, Nepal</div></div></div>
-    <h2 style="margin-top:4mm">Editorial Roles</h2>
-    <div class="entry"><div class="when now">Present</div><div><div class="what">Editor-in-Chief</div><div class="where">Nepalese Journal of Statistics</div></div></div>
-    <div class="entry"><div class="when now">2022 –</div><div><div class="what">Academic Editor (invited)</div><div class="where">PLOS ONE, Public Library of Science</div></div></div>
-  </section>
-</div>
-<div class="grow"></div>
-<div class="cover-foot"><span>Prof. Dr. Srijan Lal Shrestha &nbsp;·&nbsp; Curriculum Vitae</span><b>1</b></div>
-</div>
-
-<!-- ================= PAGE 2 ================= -->
-<section>
-  <h2>Honours, Awards &amp; Grants</h2>
-  <div class="honour">
-    <img src="../frontend/assets/images/awards/nabil_award.jpg" alt="" style="object-position:50% 25%">
-    <div><span class="tag">December 2016</span><div class="what">NABIL Science and Technology Award</div><div class="where">Conferred by the Nepal Academy of Science and Technology (NAST)</div><div class="note">For contributions to quantifying the health effects of air pollution in Nepal: environmental statistics, air quality modelling and public-health burden estimation.</div></div>
-  </div>
-  <div class="honour">
-    <img src="../frontend/assets/images/awards/bidhya_bhushan.jpg" alt="" style="object-position:55% 30%">
-    <div><span class="tag">February 2009</span><div class="what">Nepal Bidhya Bhushan “KA” (A-Class National Academic Medal)</div><div class="where">Conferred by the President of Nepal</div><div class="note">For doctoral excellence in Statistics.</div></div>
-  </div>
-  <div class="honour">
-    <img src="../frontend/assets/images/gallery/milestones/tu_long_service_certificate.jpg" alt="" style="object-position:50% 30%">
-    <div><span class="tag">Tribhuvan University</span><div class="what">Long Service Certificate (दीर्घ सेवा प्रमाण-पत्र)</div><div class="where">Conferred by Tribhuvan University</div><div class="note">Recognising long and dedicated service to the University.</div></div>
-  </div>
-  <div class="entry"><div class="when now">2026</div><div><div class="what">Ranked #10 in Nepal and #5 at Tribhuvan University in Mathematical Sciences</div><div class="where">AD Scientific Index 2026 · h-index 9, i10-index 9, 457 citations</div></div></div>
-  <div class="entry"><div class="when">2014 – 2016</div><div><div class="what">Climate Change Research Grant Program (CCRGP)</div><div class="where">Research grant, Nepal Academy of Science and Technology (NAST)</div><div class="note">Findings contributed to NAST’s research brief <i>Building Knowledge for Climate Resilience in Nepal</i> (2016).</div></div></div>
+  <p>Professor of Statistics and former Head of the Central Department of Statistics, Tribhuvan University, with more than three decades of teaching and research since 1992. His work applies environmetrics, generalized linear models, time series and distributed lag methods to air pollution, climate-sensitive disease, drought and rainfall risk, population and human development in Nepal. He is Editor-in-Chief of the Nepalese Journal of Statistics and an Academic Editor of PLOS ONE.</p>
 </section>
 
 <section>
-  <h2>Research Expertise</h2>
-  <div class="pillars">
-    <div class="pillar"><div class="n">01</div><h3>Environmetrics &amp; Air Pollution Modelling</h3><p>PM2.5 and PM10 ambient and indoor air pollution modelling in Kathmandu Valley and rural Nepal, using curvilinear and gamma GLMs.</p><div class="chips"><span class="chip">PM2.5</span><span class="chip">PM10</span><span class="chip">indoor air</span><span class="chip">gamma GLM</span></div></div>
-    <div class="pillar"><div class="n">02</div><h3>Environmental Burden of Disease &amp; Epidemiology</h3><p>Distributed lag models for respiratory hospital admissions, mortality, childhood diarrhoeal disease and COVID-19 trends, with the WHO Urban Health Initiative and NHRC.</p><div class="chips"><span class="chip">distributed lag</span><span class="chip">mortality</span><span class="chip">COVID-19</span><span class="chip">burden of disease</span></div></div>
-    <div class="pillar"><div class="n">03</div><h3>Climate Change &amp; Hydrological Modelling</h3><p>Logistic downscaling, seasonally separated rainfall models and probabilistic drought assessment over the Bagmati River Basin; climate-sensitive disease models.</p><div class="chips"><span class="chip">drought</span><span class="chip">rainfall</span><span class="chip">downscaling</span><span class="chip">Bagmati</span></div></div>
-    <div class="pillar"><div class="n">04</div><h3>Socio-Economic &amp; HDI Methodology</h3><p>Five-dimensional unequally weighted mapping and cluster analysis for subnational HDI assessment in Nepal, plus ecological footprint modelling.</p><div class="chips"><span class="chip">HDI</span><span class="chip">cluster analysis</span><span class="chip">ecological footprint</span></div></div>
-    <div class="pillar"><div class="n">05</div><h3>Population, Demography &amp; Health</h3><p>Population ageing, fertility (Poisson models of children ever born), maternal mortality and age at first marriage in Nepal.</p><div class="chips"><span class="chip">ageing</span><span class="chip">fertility</span><span class="chip">maternal mortality</span></div></div>
-    <div class="pillar"><div class="n">06</div><h3>Theoretical &amp; Mathematical Statistics</h3><p>Censored negative exponential mixed distributions, nonparametric smoothers, exponential smoothing and categorical regression with optimal scaling.</p><div class="chips"><span class="chip">mixed distributions</span><span class="chip">smoothers</span><span class="chip">optimal scaling</span></div></div>
-  </div>
+  <h2>Education</h2>
+  <div class="row"><div class="d">2007</div><div><span class="w">Ph.D. in Statistics</span>, Tribhuvan University, Kathmandu, Nepal</div></div>
 </section>
-
-<!-- ================= PAGE 3 ================= -->
-<div class="two-col page-break">
-  <section>
-    <h2>Teaching</h2>
-    <p style="font-size:8.8pt;color:var(--muted)">Master’s and PhD courses at the Central Department of Statistics, Tribhuvan University.</p>
-    <table class="courses">
-      <tr><td>Environmetrics</td><td><span class="lvl">MSc</span><span class="lvl">PhD</span></td></tr>
-      <tr><td>Nonparametric Modelling</td><td><span class="lvl">MSc</span><span class="lvl">PhD</span></td></tr>
-      <tr><td>Multivariate Analysis</td><td><span class="lvl">MSc</span><span class="lvl">PhD</span></td></tr>
-      <tr><td>Sampling Theory &amp; Design</td><td><span class="lvl">MSc</span><span class="lvl">PhD</span></td></tr>
-      <tr><td>Generalized Linear Models</td><td><span class="lvl">MSc</span><span class="lvl">PhD</span></td></tr>
-      <tr><td>Time Series Analysis</td><td><span class="lvl">MSc</span><span class="lvl">PhD</span></td></tr>
-      <tr><td>Design of Experiments</td><td><span class="lvl">MSc</span></td></tr>
-      <tr><td>Probability</td><td><span class="lvl">MSc</span></td></tr>
-      <tr><td>Econometrics</td><td><span class="lvl">MSc</span></td></tr>
-    </table>
-    <p style="font-size:8.6pt;color:var(--muted);margin-top:2mm">Also visiting faculty for Biostatistics and Business Statistics at colleges and central departments, at undergraduate and graduate levels.</p>
-  </section>
-  <section>
-    <h2>Research Supervision</h2>
-    <div class="kpis" style="grid-template-columns:1fr 1fr 1fr;margin:0 0 3mm">
-      <div class="kpi"><div class="v">1</div><div class="l">PhD supervised</div></div>
-      <div class="kpi"><div class="v">2</div><div class="l">PhDs co-supervised</div></div>
-      <div class="kpi"><div class="v">3</div><div class="l">PhDs in progress</div></div>
-    </div>
-    <ul class="clean" style="font-size:9pt">
-      <li>Environmetrics and air quality modelling (PM2.5 / PM10)</li>
-      <li>Environmental epidemiology and burden of disease</li>
-      <li>Climate, drought and rainfall risk modelling</li>
-      <li>Time series and distributed lag models</li>
-      <li>Generalized linear and nonparametric models</li>
-      <li>Human development and socio-economic measurement</li>
-    </ul>
-    <h2 style="margin-top:4mm">Collaborations</h2>
-    <ul class="clean" style="font-size:9pt">
-      <li><b>WHO Urban Health Initiative</b></li>
-      <li><b>Nepal Health Research Council</b></li>
-      <li><b>Nepal Academy of Science and Technology</b></li>
-      <li><b>Ministry of Women, Children &amp; Senior Citizens</b></li>
-      <li><b>Harvard</b> · <b>Univ. of Maryland</b> · <b>Kathmandu Univ.</b></li>
-    </ul>
-  </section>
-</div>
 
 <section>
-  <h2>Editorial &amp; Professional Service</h2>
-  <div class="entry"><div class="when now">Present</div><div><div class="what">Editor-in-Chief, Nepalese Journal of Statistics</div><div class="where">Central Department of Statistics, Tribhuvan University · published on NepJOL</div></div></div>
-  <div class="entry"><div class="when now">Dec 2022 –</div><div><div class="what">Academic Editor, PLOS ONE (invited)</div><div class="where">Public Library of Science, San Francisco · also a peer reviewer for the journal</div></div></div>
-  <div class="entry"><div class="when now">Present</div><div><div class="what">Member, Ethical Review Committee</div><div class="where">Institute of Science and Technology, Tribhuvan University</div></div></div>
-  <div class="entry"><div class="when now">Present</div><div><div class="what">Member, Nepal Statistical Society</div><div class="where">Kathmandu</div></div></div>
-  <div class="entry"><div class="when">Former</div><div><div class="what">Member, Editorial Board, Journal of Institute of Science and Technology</div><div class="where">Institute of Science and Technology, Tribhuvan University</div></div></div>
-  <div class="entry"><div class="when">Former</div><div><div class="what">Head, Central Department of Statistics</div><div class="where">Tribhuvan University: oversight of the MSc and PhD programmes in Statistics</div></div></div>
+  <h2>Academic Appointments</h2>
+  <div class="row"><div class="d">2013 – present</div><div><span class="w">Professor of Statistics</span><br><span class="o">Central Department of Statistics, Institute of Science and Technology, Tribhuvan University</span></div></div>
+  <div class="row"><div class="d">Present</div><div><span class="w">Senior Visiting Professor, M.Phil. Programmes</span><br><span class="o">Purbanchal University; Mid-West University; School of Management, Tribhuvan University</span></div></div>
+  <div class="row"><div class="d">Present</div><div><span class="w">Senior Visiting Professor, Ph.D. Programme</span><br><span class="o">Institute of Science and Technology, Tribhuvan University</span></div></div>
+  <div class="row"><div class="d">Feb 2022 – present</div><div><span class="w">Adjunct Faculty</span> (invited)<br><span class="o">Chandigarh University, Mohali, Punjab, India</span></div></div>
+  <div class="row"><div class="d">Former</div><div><span class="w">Head of Department</span><br><span class="o">Central Department of Statistics, Tribhuvan University</span></div></div>
+  <div class="row"><div class="d">1992 – present</div><div><span class="w">Faculty Member</span><br><span class="o">Central Department of Statistics, Tribhuvan University</span><br><span class="n">Also visiting faculty for Biostatistics and Business Statistics at colleges and central departments.</span></div></div>
 </section>
 
-<div>
-  <section>
-    <h2>Talks &amp; Events</h2>
-    <ul class="clean" style="font-size:9pt">
-      <li><b>Mar 2024</b>: release of the Nepalese Journal of Statistics Vol. 7 (print), CDS, TU</li>
-      <li><b>Oct 2023</b>: plenary talk, “Insights to Features of Nonparametric Regression Modeling with Illustrations”, PhD Festival 2080, CDS, TU</li>
-      <li><b>Sep 2017</b>: National Conference on Statistics and its Applications, Kirtipur</li>
-    </ul>
-  </section>
-</div>
+<section>
+  <h2>Editorial Roles</h2>
+  <div class="row"><div class="d">Present</div><div><span class="w">Editor-in-Chief</span>, Nepalese Journal of Statistics, Central Department of Statistics, Tribhuvan University</div></div>
+  <div class="row"><div class="d">Dec 2022 – present</div><div><span class="w">Academic Editor</span> (invited), PLOS ONE, Public Library of Science; also a peer reviewer for the journal</div></div>
+  <div class="row"><div class="d">Former</div><div><span class="w">Member, Editorial Board</span>, Journal of Institute of Science and Technology, IoST, Tribhuvan University</div></div>
+</section>
 
-<!-- ================= PUBLICATIONS ================= -->
-<section class="page-break">
+<section>
+  <h2>Academic Service and Committees</h2>
+  <div class="row"><div class="d">Present</div><div><span class="w">Member, Governing Board</span>, School of Mathematical Sciences, Tribhuvan University</div></div>
+  <div class="row"><div class="d">Former</div><div><span class="w">Chairperson</span>, Central Department Research Committee (CDRC), Central Department of Statistics, Tribhuvan University</div></div>
+  <div class="row"><div class="d">Former</div><div><span class="w">Member, Research Committee</span>, Institute of Science and Technology, Tribhuvan University</div></div>
+  <div class="row"><div class="d">Former</div><div><span class="w">Member, Ethical Review Committee</span>, Institute of Science and Technology, Tribhuvan University</div></div>
+  <div class="row"><div class="d">Former</div><div><span class="w">Member, Statistics Subject Committee</span>, Tribhuvan University</div></div>
+</section>
+
+<section>
+  <h2>Honours and Awards</h2>
+  <div class="row"><div class="d">2026</div><div><span class="w">Ranked 10th in Nepal and 5th at Tribhuvan University in Mathematical Sciences</span>, AD Scientific Index 2026</div></div>
+  <div class="row"><div class="d">Dec 2016</div><div><span class="w">NABIL Science and Technology Award</span>, Nepal Academy of Science and Technology (NAST), for research on quantifying the health effects of air pollution in Nepal</div></div>
+  <div class="row"><div class="d">Feb 2009</div><div><span class="w">Nepal Bidhya Bhushan “KA”</span> (A-Class National Academic Medal), conferred by the President of Nepal, for doctoral excellence in Statistics</div></div>
+  <div class="row"><div class="d">—</div><div><span class="w">Long Service Certificate</span>, Tribhuvan University</div></div>
+</section>
+
+<section>
+  <h2>Research Grants</h2>
+  <div class="row"><div class="d">2014 – 2016</div><div><span class="w">Climate Change Research Grant Program (CCRGP)</span>, Nepal Academy of Science and Technology; findings contributed to NAST’s research brief <span class="w">Building Knowledge for Climate Resilience in Nepal</span> (2016)</div></div>
+</section>
+
+<section>
+  <h2>Research Interests</h2>
+  <ul class="cols2">
+    <li>Environmetrics and air pollution modelling</li>
+    <li>Environmental burden of disease and epidemiology</li>
+    <li>Climate change, drought and rainfall modelling</li>
+    <li>Time series and distributed lag models</li>
+    <li>Generalized linear and nonparametric models</li>
+    <li>Human development and socio-economic measurement</li>
+    <li>Population, demography and health</li>
+    <li>Theoretical and mathematical statistics</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Teaching</h2>
+  <p class="note">Master’s and Ph.D. courses at the Central Department of Statistics, Tribhuvan University.</p>
+  <ul class="cols2">
+    <li>Environmetrics (M.Sc., Ph.D.)</li>
+    <li>Nonparametric Modelling (M.Sc., Ph.D.)</li>
+    <li>Multivariate Analysis (M.Sc., Ph.D.)</li>
+    <li>Sampling Theory and Design (M.Sc., Ph.D.)</li>
+    <li>Generalized Linear Models (M.Sc., Ph.D.)</li>
+    <li>Time Series Analysis (M.Sc., Ph.D.)</li>
+    <li>Design of Experiments (M.Sc.)</li>
+    <li>Probability (M.Sc.)</li>
+    <li>Econometrics (M.Sc.)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Research Supervision</h2>
+  <table class="kv">
+    <tr><td>Ph.D. supervised (completed)</td><td>1</td></tr>
+    <tr><td>Ph.D. co-supervised (completed)</td><td>2</td></tr>
+    <tr><td>Ph.D. in progress</td><td>3 (supervision or co-supervision)</td></tr>
+  </table>
+</section>
+
+<section>
   <h2>Publications</h2>
-  <p class="pub-intro">Journal articles and research papers, most recent first. <span class="me" style="font-weight:700">S.L. Shrestha</span> is underlined; DOIs link to the published version.</p>
+  <p class="note">Journal articles and research papers, most recent first. Author’s name in bold.</p>
   <ol class="pubs">
 <!-- PUBS:START -->
     <div class="yeargroup">2020 – 2025</div>
-    <li><div>I.P. Banjade, <span class="me">S.L. Shrestha</span>. <span class="t">Enhancement of Human Development Assessment Model: An Insight from Bagmati Province, Nepal.</span> <span class="j">Nepalese Journal of Statistics</span>, 9, 21–42. <a class="doi" href="https://doi.org/10.3126/njs.v9i1.88701">doi:10.3126/njs.v9i1.88701</a></div><div class="y">2025</div></li>
-    <li><div>S.R. Nepal, <span class="me">S.L. Shrestha</span>. <span class="t">An investigation of factors associated with the ecological footprint in Nepal through statistical modeling.</span> <span class="j">Ceylon Journal of Science</span>, 54(4), 1081–1093. <a class="doi" href="https://doi.org/10.4038/cjs.v54i4.8628">doi:10.4038/cjs.v54i4.8628</a></div><div class="y">2025</div></li>
-    <li><div>I.P. Banjade, <span class="me">S.L. Shrestha</span>. <span class="t">Five-dimensional unequally weighted mapping methodology for measuring the level of human development: an application in Bagmati Province, Nepal.</span> <span class="j">Asia-Pacific Journal of Regional Science</span>, 8(4), 1135–1161. <a class="doi" href="https://doi.org/10.1007/s41685-024-00359-1">doi:10.1007/s41685-024-00359-1</a></div><div class="y">2024</div></li>
-    <li><div>S.R. Nepal, <span class="me">S.L. Shrestha</span>. <span class="t">Modeling the ecological footprint and assessing its influential factors: A systematic review.</span> <span class="j">Environmental Science and Pollution Research</span>, 31(38), 50076–50097. <a class="doi" href="https://doi.org/10.1007/s11356-024-34549-3">doi:10.1007/s11356-024-34549-3</a></div><div class="y">2024</div></li>
-    <li><div>I.P. Banjade, <span class="me">S.L. Shrestha</span>. <span class="t">Assessing Human Development in Nepal through Descriptive and Cluster Analysis: Progress and Disparities.</span> <span class="j">Applied Research in Quality of Life</span>, 19(3), 945–958. <a class="doi" href="https://doi.org/10.1007/s11482-024-10278-0">doi:10.1007/s11482-024-10278-0</a></div><div class="y">2024</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>. <span class="t">Burden of Respiratory Diseases Attributable to Household Air Pollution in Nepal: National and Provincial Estimates.</span> <span class="j">Nepalese Journal of Statistics</span>, 6(1), 15–28. <a class="doi" href="https://doi.org/10.3126/njs.v6i01.50799">doi:10.3126/njs.v6i01.50799</a></div><div class="y">2022</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>. <span class="t">Quantifying effects of meteorological parameters on air pollution in Kathmandu valley through regression models.</span> <span class="j">Environmental Monitoring and Assessment</span>, 194(10), 684. <a class="doi" href="https://doi.org/10.1007/s10661-022-10347-7">doi:10.1007/s10661-022-10347-7</a></div><div class="y">2022</div></li>
-    <li><div>M. Dhimal, D. Bhandari, K.B. Karki, <span class="me">S.L. Shrestha</span>, et al. <span class="t">Effects of Climatic Factors on Diarrheal Diseases among Children below 5 Years of Age at National and Subnational Levels in Nepal: An Ecological Study.</span> <span class="j">International Journal of Environmental Research and Public Health</span>, 19(10), 6138. <a class="doi" href="https://doi.org/10.3390/ijerph19106138">doi:10.3390/ijerph19106138</a></div><div class="y">2022</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>. <span class="t">Curvilinear and gamma generalized linear models for modeling the dependency of air pollution levels on meteorological conditions in Kathmandu valley.</span> <span class="j">Research Square (preprint; WHO Urban Health Initiative study)</span>. <a class="doi" href="https://doi.org/10.21203/rs.3.rs-1299421/v1">doi:10.21203/rs.3.rs-1299421/v1</a></div><div class="y">2022</div></li>
-    <li><div>C.R. Bhandari, <span class="me">S.L. Shrestha</span>. <span class="t">Assessment of Factors Associated with Indoor Air Pollution using Multinomial Logistic Regression: A Case Study of Barbardiya Municipality.</span> <span class="j">Nepalese Journal of Statistics</span>, 5(1), 7–20. <a class="doi" href="https://doi.org/10.3126/njs.v5i1.41226">doi:10.3126/njs.v5i1.41226</a></div><div class="y">2021</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>, P. Mudu, P. DeCarlo. <span class="t">Air pollution exposure and health impacts in the Kathmandu valley.</span> <span class="j">International Journal of Environment and Health</span>, 10(3/4), 213. <a class="doi" href="https://doi.org/10.1504/ijenvh.2021.122312">doi:10.1504/ijenvh.2021.122312</a></div><div class="y">2021</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>. <span class="t">Analysis of ambient particulate air pollution and health in Nepal.</span> <span class="j">Journal of Global Ecology and Environment</span>, 12(4), 14–29.</div><div class="y">2021</div></li>
-    <li><div>S. Bhandary, <span class="me">S.L. Shrestha</span>, R.P. Khatiwada, et al. <span class="t">Trend Analysis, Modelling and Impact Assessment of COVID-19 in Nepal.</span> <span class="j">Journal of Institute of Science and Technology</span>, 25(2), 1–8. <a class="doi" href="https://doi.org/10.3126/jist.v25i2.33715">doi:10.3126/jist.v25i2.33715</a></div><div class="y">2020</div></li>
+    <li><div>I.P. Banjade, <span class="me">S.L. Shrestha</span> (2025). <span class="t">Enhancement of Human Development Assessment Model: An Insight from Bagmati Province, Nepal.</span> <span class="j">Nepalese Journal of Statistics</span>, 9, 21–42. <a class="doi" href="https://doi.org/10.3126/njs.v9i1.88701">doi:10.3126/njs.v9i1.88701</a></div><div class="y">2025</div></li>
+    <li><div>S.R. Nepal, <span class="me">S.L. Shrestha</span> (2025). <span class="t">An investigation of factors associated with the ecological footprint in Nepal through statistical modeling.</span> <span class="j">Ceylon Journal of Science</span>, 54(4), 1081–1093. <a class="doi" href="https://doi.org/10.4038/cjs.v54i4.8628">doi:10.4038/cjs.v54i4.8628</a></div><div class="y">2025</div></li>
+    <li><div>I.P. Banjade, <span class="me">S.L. Shrestha</span> (2024). <span class="t">Five-dimensional unequally weighted mapping methodology for measuring the level of human development: an application in Bagmati Province, Nepal.</span> <span class="j">Asia-Pacific Journal of Regional Science</span>, 8(4), 1135–1161. <a class="doi" href="https://doi.org/10.1007/s41685-024-00359-1">doi:10.1007/s41685-024-00359-1</a></div><div class="y">2024</div></li>
+    <li><div>S.R. Nepal, <span class="me">S.L. Shrestha</span> (2024). <span class="t">Modeling the ecological footprint and assessing its influential factors: A systematic review.</span> <span class="j">Environmental Science and Pollution Research</span>, 31(38), 50076–50097. <a class="doi" href="https://doi.org/10.1007/s11356-024-34549-3">doi:10.1007/s11356-024-34549-3</a></div><div class="y">2024</div></li>
+    <li><div>I.P. Banjade, <span class="me">S.L. Shrestha</span> (2024). <span class="t">Assessing Human Development in Nepal through Descriptive and Cluster Analysis: Progress and Disparities.</span> <span class="j">Applied Research in Quality of Life</span>, 19(3), 945–958. <a class="doi" href="https://doi.org/10.1007/s11482-024-10278-0">doi:10.1007/s11482-024-10278-0</a></div><div class="y">2024</div></li>
+    <li><div><span class="me">S.L. Shrestha</span> (2022). <span class="t">Burden of Respiratory Diseases Attributable to Household Air Pollution in Nepal: National and Provincial Estimates.</span> <span class="j">Nepalese Journal of Statistics</span>, 6(1), 15–28. <a class="doi" href="https://doi.org/10.3126/njs.v6i01.50799">doi:10.3126/njs.v6i01.50799</a></div><div class="y">2022</div></li>
+    <li><div><span class="me">S.L. Shrestha</span> (2022). <span class="t">Quantifying effects of meteorological parameters on air pollution in Kathmandu valley through regression models.</span> <span class="j">Environmental Monitoring and Assessment</span>, 194(10), 684. <a class="doi" href="https://doi.org/10.1007/s10661-022-10347-7">doi:10.1007/s10661-022-10347-7</a></div><div class="y">2022</div></li>
+    <li><div>M. Dhimal, D. Bhandari, K.B. Karki, <span class="me">S.L. Shrestha</span>, et al. (2022). <span class="t">Effects of Climatic Factors on Diarrheal Diseases among Children below 5 Years of Age at National and Subnational Levels in Nepal: An Ecological Study.</span> <span class="j">International Journal of Environmental Research and Public Health</span>, 19(10), 6138. <a class="doi" href="https://doi.org/10.3390/ijerph19106138">doi:10.3390/ijerph19106138</a></div><div class="y">2022</div></li>
+    <li><div><span class="me">S.L. Shrestha</span> (2022). <span class="t">Curvilinear and gamma generalized linear models for modeling the dependency of air pollution levels on meteorological conditions in Kathmandu valley.</span> <span class="j">Research Square (preprint; WHO Urban Health Initiative study)</span>. <a class="doi" href="https://doi.org/10.21203/rs.3.rs-1299421/v1">doi:10.21203/rs.3.rs-1299421/v1</a></div><div class="y">2022</div></li>
+    <li><div>C.R. Bhandari, <span class="me">S.L. Shrestha</span> (2021). <span class="t">Assessment of Factors Associated with Indoor Air Pollution using Multinomial Logistic Regression: A Case Study of Barbardiya Municipality.</span> <span class="j">Nepalese Journal of Statistics</span>, 5(1), 7–20. <a class="doi" href="https://doi.org/10.3126/njs.v5i1.41226">doi:10.3126/njs.v5i1.41226</a></div><div class="y">2021</div></li>
+    <li><div><span class="me">S.L. Shrestha</span>, P. Mudu, P. DeCarlo (2021). <span class="t">Air pollution exposure and health impacts in the Kathmandu valley.</span> <span class="j">International Journal of Environment and Health</span>, 10(3/4), 213. <a class="doi" href="https://doi.org/10.1504/ijenvh.2021.122312">doi:10.1504/ijenvh.2021.122312</a></div><div class="y">2021</div></li>
+    <li><div><span class="me">S.L. Shrestha</span> (2021). <span class="t">Analysis of ambient particulate air pollution and health in Nepal.</span> <span class="j">Journal of Global Ecology and Environment</span>, 12(4), 14–29.</div><div class="y">2021</div></li>
+    <li><div>S. Bhandary, <span class="me">S.L. Shrestha</span>, R.P. Khatiwada, et al. (2020). <span class="t">Trend Analysis, Modelling and Impact Assessment of COVID-19 in Nepal.</span> <span class="j">Journal of Institute of Science and Technology</span>, 25(2), 1–8. <a class="doi" href="https://doi.org/10.3126/jist.v25i2.33715">doi:10.3126/jist.v25i2.33715</a></div><div class="y">2020</div></li>
 
     <div class="yeargroup">2010 – 2019</div>
-    <li><div><span class="me">S.L. Shrestha</span>. <span class="t">Assessment of Ambient Particulate Air Pollution and its Attribution to Burden of Disease in Kathmandu Valley, Nepal: A Review.</span> <span class="j">Environmental Analysis &amp; Ecology Studies</span>, 4(4).</div><div class="y">2018</div></li>
-    <li><div>R.M. Shrestha, A.B. Sthapit, <span class="me">S.L. Shrestha</span>. <span class="t">A probabilistic approach for assessment of future drought in Bagmati River Basin, Nepal.</span> <span class="j">Nepalese Journal of Statistics</span>, 2, 75–88. <a class="doi" href="https://doi.org/10.3126/njs.v2i0.21156">doi:10.3126/njs.v2i0.21156</a></div><div class="y">2018</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>. <span class="t">Negative Binomial Model in Linking Water-borne and Vector-borne Disease Hospitalizations with Climate Sensitive Variables in Nepal.</span> <span class="j">Nepalese Journal of Statistics</span>, 2, 11–26. <a class="doi" href="https://doi.org/10.3126/njs.v2i0.21152">doi:10.3126/njs.v2i0.21152</a></div><div class="y">2018</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>, I.L. Shrestha, N. Shrestha, R.D. Joshi. <span class="t">Statistical Modeling of Health Effects on Climate-Sensitive Variables and Assessment of Environmental Burden of Diseases Attributable to Climate Change in Nepal.</span> <span class="j">Environmental Modeling &amp; Assessment</span>, 22(5), 459–472. <a class="doi" href="https://doi.org/10.1007/s10666-017-9547-5">doi:10.1007/s10666-017-9547-5</a></div><div class="y">2017</div></li>
-    <li><div>R.M. Shrestha, <span class="me">S.L. Shrestha</span>. <span class="t">Seasonally Separated Logistic Models to Assess the Impact of Climate Variables on Occurrence of Rainfall over the Bagmati River Basin of Nepal.</span> <span class="j">British Journal of Environment and Climate Change</span>, 7(1), 26–42. <a class="doi" href="https://doi.org/10.9734/bjecc/2017/30696">doi:10.9734/bjecc/2017/30696</a></div><div class="y">2017</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>, I.L. Shrestha, N. Shrestha. <span class="t">Region-wise Effects of Climate Sensitive Variables on Some Specific Disease Burdens in Nepal.</span> <span class="j">The Open Atmospheric Science Journal</span>, 10, 63–83. <a class="doi" href="https://doi.org/10.2174/1874282301610010063">doi:10.2174/1874282301610010063</a></div><div class="y">2016</div></li>
-    <li><div>R.M. Shrestha, <span class="me">S.L. Shrestha</span>, A.B. Sthapit. <span class="t">Logistic Model as a Statistical Downscaling Approach for Forecasting a Wet or Dry Day in the Bagmati River Basin.</span> <span class="j">The Open Atmospheric Science Journal</span>, 9, 9–22. <a class="doi" href="https://doi.org/10.2174/1874282301509010009">doi:10.2174/1874282301509010009</a></div><div class="y">2015</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>, N. Shrestha. <span class="t">Dynamics of Population Ageing in Nepal and the Need for Action.</span> <span class="j">Journal of Population Ageing</span>, 7(2), 81–95. <a class="doi" href="https://doi.org/10.1007/s12062-014-9096-5">doi:10.1007/s12062-014-9096-5</a></div><div class="y">2014</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>. <span class="t">Censored Negative Exponential Distribution as a Mixed Distribution and Derivation of Its Moments.</span> <span class="j">Nepal Journal of Science and Technology</span>, 14(1), 167–176. <a class="doi" href="https://doi.org/10.3126/njst.v14i1.8937">doi:10.3126/njst.v14i1.8937</a></div><div class="y">2013</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>. <span class="t">Poisson Model for Linking Children Ever Born with Some Key Predictor Variables in Nepalese Women.</span> <span class="j">Journal of Institute of Science and Technology</span>, 18(2), 1–7.</div><div class="y">2013</div></li>
-    <li><div>I.L. Shrestha, <span class="me">S.L. Shrestha</span>. <span class="t">Statistical Models and Water Quality Characterization of Source Waters in Nepal.</span> <span class="j">Nepal Journal of Science and Technology</span>, 12, 260–267. <a class="doi" href="https://doi.org/10.3126/njst.v12i0.6511">doi:10.3126/njst.v12i0.6511</a></div><div class="y">2012</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>. <span class="t">Particulate air pollution and daily mortality in Kathmandu Valley, Nepal: associations and distributed lag.</span> <span class="j">The Open Atmospheric Science Journal</span>, 6(Suppl 1), 62–70. <a class="doi" href="https://doi.org/10.2174/1874282301206010062">doi:10.2174/1874282301206010062</a></div><div class="y">2012</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>, G. Shrestha. <span class="t">Statistical Analysis of Factors Associated with Maternal Mortality in Nepal.</span> <span class="j">International Journal of Statistical Sciences</span>, 10, 57–70.</div><div class="y">2010</div></li>
+    <li><div><span class="me">S.L. Shrestha</span> (2018). <span class="t">Assessment of Ambient Particulate Air Pollution and its Attribution to Burden of Disease in Kathmandu Valley, Nepal: A Review.</span> <span class="j">Environmental Analysis &amp; Ecology Studies</span>, 4(4).</div><div class="y">2018</div></li>
+    <li><div>R.M. Shrestha, A.B. Sthapit, <span class="me">S.L. Shrestha</span> (2018). <span class="t">A probabilistic approach for assessment of future drought in Bagmati River Basin, Nepal.</span> <span class="j">Nepalese Journal of Statistics</span>, 2, 75–88. <a class="doi" href="https://doi.org/10.3126/njs.v2i0.21156">doi:10.3126/njs.v2i0.21156</a></div><div class="y">2018</div></li>
+    <li><div><span class="me">S.L. Shrestha</span> (2018). <span class="t">Negative Binomial Model in Linking Water-borne and Vector-borne Disease Hospitalizations with Climate Sensitive Variables in Nepal.</span> <span class="j">Nepalese Journal of Statistics</span>, 2, 11–26. <a class="doi" href="https://doi.org/10.3126/njs.v2i0.21152">doi:10.3126/njs.v2i0.21152</a></div><div class="y">2018</div></li>
+    <li><div><span class="me">S.L. Shrestha</span>, I.L. Shrestha, N. Shrestha, R.D. Joshi (2017). <span class="t">Statistical Modeling of Health Effects on Climate-Sensitive Variables and Assessment of Environmental Burden of Diseases Attributable to Climate Change in Nepal.</span> <span class="j">Environmental Modeling &amp; Assessment</span>, 22(5), 459–472. <a class="doi" href="https://doi.org/10.1007/s10666-017-9547-5">doi:10.1007/s10666-017-9547-5</a></div><div class="y">2017</div></li>
+    <li><div>R.M. Shrestha, <span class="me">S.L. Shrestha</span> (2017). <span class="t">Seasonally Separated Logistic Models to Assess the Impact of Climate Variables on Occurrence of Rainfall over the Bagmati River Basin of Nepal.</span> <span class="j">British Journal of Environment and Climate Change</span>, 7(1), 26–42. <a class="doi" href="https://doi.org/10.9734/bjecc/2017/30696">doi:10.9734/bjecc/2017/30696</a></div><div class="y">2017</div></li>
+    <li><div><span class="me">S.L. Shrestha</span>, I.L. Shrestha, N. Shrestha (2016). <span class="t">Region-wise Effects of Climate Sensitive Variables on Some Specific Disease Burdens in Nepal.</span> <span class="j">The Open Atmospheric Science Journal</span>, 10, 63–83. <a class="doi" href="https://doi.org/10.2174/1874282301610010063">doi:10.2174/1874282301610010063</a></div><div class="y">2016</div></li>
+    <li><div>R.M. Shrestha, <span class="me">S.L. Shrestha</span>, A.B. Sthapit (2015). <span class="t">Logistic Model as a Statistical Downscaling Approach for Forecasting a Wet or Dry Day in the Bagmati River Basin.</span> <span class="j">The Open Atmospheric Science Journal</span>, 9, 9–22. <a class="doi" href="https://doi.org/10.2174/1874282301509010009">doi:10.2174/1874282301509010009</a></div><div class="y">2015</div></li>
+    <li><div><span class="me">S.L. Shrestha</span>, N. Shrestha (2014). <span class="t">Dynamics of Population Ageing in Nepal and the Need for Action.</span> <span class="j">Journal of Population Ageing</span>, 7(2), 81–95. <a class="doi" href="https://doi.org/10.1007/s12062-014-9096-5">doi:10.1007/s12062-014-9096-5</a></div><div class="y">2014</div></li>
+    <li><div><span class="me">S.L. Shrestha</span> (2013). <span class="t">Censored Negative Exponential Distribution as a Mixed Distribution and Derivation of Its Moments.</span> <span class="j">Nepal Journal of Science and Technology</span>, 14(1), 167–176. <a class="doi" href="https://doi.org/10.3126/njst.v14i1.8937">doi:10.3126/njst.v14i1.8937</a></div><div class="y">2013</div></li>
+    <li><div><span class="me">S.L. Shrestha</span> (2013). <span class="t">Poisson Model for Linking Children Ever Born with Some Key Predictor Variables in Nepalese Women.</span> <span class="j">Journal of Institute of Science and Technology</span>, 18(2), 1–7.</div><div class="y">2013</div></li>
+    <li><div>I.L. Shrestha, <span class="me">S.L. Shrestha</span> (2012). <span class="t">Statistical Models and Water Quality Characterization of Source Waters in Nepal.</span> <span class="j">Nepal Journal of Science and Technology</span>, 12, 260–267. <a class="doi" href="https://doi.org/10.3126/njst.v12i0.6511">doi:10.3126/njst.v12i0.6511</a></div><div class="y">2012</div></li>
+    <li><div><span class="me">S.L. Shrestha</span> (2012). <span class="t">Particulate air pollution and daily mortality in Kathmandu Valley, Nepal: associations and distributed lag.</span> <span class="j">The Open Atmospheric Science Journal</span>, 6(Suppl 1), 62–70. <a class="doi" href="https://doi.org/10.2174/1874282301206010062">doi:10.2174/1874282301206010062</a></div><div class="y">2012</div></li>
+    <li><div><span class="me">S.L. Shrestha</span>, G. Shrestha (2010). <span class="t">Statistical Analysis of Factors Associated with Maternal Mortality in Nepal.</span> <span class="j">International Journal of Statistical Sciences</span>, 10, 57–70.</div><div class="y">2010</div></li>
 
     <div class="yeargroup">2001 – 2009</div>
-    <li><div><span class="me">S.L. Shrestha</span>. <span class="t">Categorical regression models with optimal scaling for predicting indoor air pollution concentrations inside kitchens in Nepalese households.</span> <span class="j">Nepal Journal of Science and Technology</span>, 10, 205–211. <a class="doi" href="https://doi.org/10.3126/njst.v10i0.2962">doi:10.3126/njst.v10i0.2962</a></div><div class="y">2009</div></li>
-    <li><div>G. Shrestha, <span class="me">S.L. Shrestha</span>. <span class="t">Nonparametric distribution fitting of age at first marriage of Nepalese women through scatter plot smoother.</span> <span class="j">Nepal Journal of Science and Technology</span>, 9, 179–186. <a class="doi" href="https://doi.org/10.3126/njst.v9i0.3184">doi:10.3126/njst.v9i0.3184</a></div><div class="y">2008</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>. <span class="t">Time series modelling of respiratory hospital admissions and geometrically weighted distributed lag effects from ambient particulate air pollution within Kathmandu Valley, Nepal.</span> <span class="j">Environmental Modeling &amp; Assessment</span>, 12(3), 239–251. <a class="doi" href="https://doi.org/10.1007/s10666-006-9071-5">doi:10.1007/s10666-006-9071-5</a></div><div class="y">2007</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>. <span class="t">Statistical modelling of effects on health linked to indoor air pollution, based on kitchen exposure and with reference to a cross-sectional household survey conducted in Nepal.</span> <span class="j">International Journal of Environment and Pollution</span>, 27(4), 359. <a class="doi" href="https://doi.org/10.1504/ijep.2006.010578">doi:10.1504/ijep.2006.010578</a></div><div class="y">2006</div></li>
-    <li><div>I.L. Shrestha, <span class="me">S.L. Shrestha</span>. <span class="t">Indoor air pollution from biomass fuels and respiratory health of the exposed population in Nepalese households.</span> <span class="j">International Journal of Occupational and Environmental Health</span>, 11(2), 150–160. <a class="doi" href="https://doi.org/10.1179/oeh.2005.11.2.150">doi:10.1179/oeh.2005.11.2.150</a></div><div class="y">2005</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>. <span class="t">Application of Triple Exponential Smoothing Technique in the Analysis of Time Series with a Quadratic Trend.</span> <span class="j">Nepal Journal of Science and Technology</span>, 3, 1–4.</div><div class="y">2001</div></li>
+    <li><div><span class="me">S.L. Shrestha</span> (2009). <span class="t">Categorical regression models with optimal scaling for predicting indoor air pollution concentrations inside kitchens in Nepalese households.</span> <span class="j">Nepal Journal of Science and Technology</span>, 10, 205–211. <a class="doi" href="https://doi.org/10.3126/njst.v10i0.2962">doi:10.3126/njst.v10i0.2962</a></div><div class="y">2009</div></li>
+    <li><div>G. Shrestha, <span class="me">S.L. Shrestha</span> (2008). <span class="t">Nonparametric distribution fitting of age at first marriage of Nepalese women through scatter plot smoother.</span> <span class="j">Nepal Journal of Science and Technology</span>, 9, 179–186. <a class="doi" href="https://doi.org/10.3126/njst.v9i0.3184">doi:10.3126/njst.v9i0.3184</a></div><div class="y">2008</div></li>
+    <li><div><span class="me">S.L. Shrestha</span> (2007). <span class="t">Time series modelling of respiratory hospital admissions and geometrically weighted distributed lag effects from ambient particulate air pollution within Kathmandu Valley, Nepal.</span> <span class="j">Environmental Modeling &amp; Assessment</span>, 12(3), 239–251. <a class="doi" href="https://doi.org/10.1007/s10666-006-9071-5">doi:10.1007/s10666-006-9071-5</a></div><div class="y">2007</div></li>
+    <li><div><span class="me">S.L. Shrestha</span> (2006). <span class="t">Statistical modelling of effects on health linked to indoor air pollution, based on kitchen exposure and with reference to a cross-sectional household survey conducted in Nepal.</span> <span class="j">International Journal of Environment and Pollution</span>, 27(4), 359. <a class="doi" href="https://doi.org/10.1504/ijep.2006.010578">doi:10.1504/ijep.2006.010578</a></div><div class="y">2006</div></li>
+    <li><div>I.L. Shrestha, <span class="me">S.L. Shrestha</span> (2005). <span class="t">Indoor air pollution from biomass fuels and respiratory health of the exposed population in Nepalese households.</span> <span class="j">International Journal of Occupational and Environmental Health</span>, 11(2), 150–160. <a class="doi" href="https://doi.org/10.1179/oeh.2005.11.2.150">doi:10.1179/oeh.2005.11.2.150</a></div><div class="y">2005</div></li>
+    <li><div><span class="me">S.L. Shrestha</span> (2001). <span class="t">Application of Triple Exponential Smoothing Technique in the Analysis of Time Series with a Quadratic Trend.</span> <span class="j">Nepal Journal of Science and Technology</span>, 3, 1–4.</div><div class="y">2001</div></li>
 <!-- PUBS:END -->
   </ol>
 </section>
 
 <section>
-  <h2>Research Reports &amp; Monographs</h2>
+  <h2>Research Reports and Monographs</h2>
   <ol class="pubs reports">
 <!-- REPORTS:START -->
-    <li><div><span class="me">S.L. Shrestha</span>, S.P. Khanal. <span class="t">Analysis of Press Reports 2017/18.</span> Ministry of Women, Children and Senior Citizens, Government of Nepal.</div><div class="y">2019</div></li>
-    <li><div><span class="me">S.L. Shrestha</span>, S.P. Khanal. <span class="t">Service Seekers&#39; Satisfaction on Welfare Related Programs for Women, Children, Disabled and Elderly Population in Some Selected Districts of Nepal.</span> Ministry of Women, Children and Senior Citizens, Government of Nepal.</div><div class="y">2018</div></li>
-    <li><div>M. Dhimal, K.B. Karki, K.K. Aryal, <span class="me">S.L. Shrestha</span>, et al. <span class="t">Effects of Climate Factors on Diarrheal Diseases at National and Subnational Levels in Nepal.</span> Nepal Health Research Council and WHO Country Office for Nepal.</div><div class="y">2018</div></li>
-    <li><div>NAST. <span class="t">Building Knowledge for Climate Resilience in Nepal (Research Brief, contributor).</span> Nepal Academy of Science and Technology, Khumaltar, Lalitpur.</div><div class="y">2016</div></li>
-    <li><div>K.B. Karki, P. Dhakal, <span class="me">S.L. Shrestha</span>, et al. <span class="t">Situation Analysis of Ambient Air Pollution and Respiratory Effects in Kathmandu Valley, 2015.</span> Nepal Health Research Council.</div><div class="y">2016</div></li>
+    <li><div><span class="me">S.L. Shrestha</span>, S.P. Khanal (2019). <span class="t">Analysis of Press Reports 2017/18.</span> Ministry of Women, Children and Senior Citizens, Government of Nepal.</div><div class="y">2019</div></li>
+    <li><div><span class="me">S.L. Shrestha</span>, S.P. Khanal (2018). <span class="t">Service Seekers&#39; Satisfaction on Welfare Related Programs for Women, Children, Disabled and Elderly Population in Some Selected Districts of Nepal.</span> Ministry of Women, Children and Senior Citizens, Government of Nepal.</div><div class="y">2018</div></li>
+    <li><div>M. Dhimal, K.B. Karki, K.K. Aryal, <span class="me">S.L. Shrestha</span>, et al. (2018). <span class="t">Effects of Climate Factors on Diarrheal Diseases at National and Subnational Levels in Nepal.</span> Nepal Health Research Council and WHO Country Office for Nepal.</div><div class="y">2018</div></li>
+    <li><div>NAST (2016). <span class="t">Building Knowledge for Climate Resilience in Nepal (Research Brief, contributor).</span> Nepal Academy of Science and Technology, Khumaltar, Lalitpur.</div><div class="y">2016</div></li>
+    <li><div>K.B. Karki, P. Dhakal, <span class="me">S.L. Shrestha</span>, et al. (2016). <span class="t">Situation Analysis of Ambient Air Pollution and Respiratory Effects in Kathmandu Valley, 2015.</span> Nepal Health Research Council.</div><div class="y">2016</div></li>
 <!-- REPORTS:END -->
   </ol>
 </section>
 
 <section>
-  <h2>Research Metrics &amp; Rankings</h2>
-  <div class="kpis" style="grid-template-columns:repeat(3,1fr);margin:0 0 3.5mm">
-    <div class="kpi"><div class="v">9 <small style="color:var(--muted);font-size:9pt">/ 7 recent</small></div><div class="l">h-index</div></div>
-    <div class="kpi"><div class="v">9 <small style="color:var(--muted);font-size:9pt">/ 7 recent</small></div><div class="l">i10-index</div></div>
-    <div class="kpi"><div class="v">457 <small style="color:var(--muted);font-size:9pt">/ 207 recent</small></div><div class="l">Citations</div></div>
-  </div>
-  <table class="ranks">
-    <thead><tr><th>AD Scientific Index 2026</th><th>Tribhuvan Univ.</th><th>Nepal</th><th>Asia</th><th>World</th></tr></thead>
-    <tbody>
-      <tr class="hi"><td>Mathematical Sciences</td><td><b>#5</b> of 28</td><td><b>#10</b> of 50</td><td>#7,042 of 23,242</td><td>#30,140 of 73,558</td></tr>
-      <tr><td>Natural Sciences</td><td><b>#65</b> of 188</td><td><b>#114</b> of 323</td><td>#61,187 of 133,220</td><td>#263,727 of 474,358</td></tr>
-      <tr><td>All fields, by total h-index</td><td>#188 of 635</td><td>#492 of 1,837</td><td>#276,181 of 824,262</td><td>#1,158,016 of 2,632,883</td></tr>
-    </tbody>
-  </table>
-  <p class="pub-intro" style="margin:2mm 0 0">“Recent” covers the last six years. ScholarGPS classifies his work under <b>Statistics</b> (Physical Sciences), with top specialties <b>Pollution</b>, <b>Air Pollution</b> and <b>Statistical Model</b>.</p>
+  <h2>Invited Talks and Academic Events</h2>
+  <div class="row"><div class="d">Mar 2024</div><div>Release and Dissemination Programme of the <span class="w">Nepalese Journal of Statistics, Vol. 7</span> (print edition), Central Department of Statistics, Tribhuvan University, Kirtipur</div></div>
+  <div class="row"><div class="d">Oct 2023</div><div>Plenary talk, “Insights to Features of Nonparametric Regression Modeling with Illustrations”, <span class="w">PhD Festival 2080</span>, Central Department of Statistics, Tribhuvan University</div></div>
+  <div class="row"><div class="d">Sep 2017</div><div><span class="w">National Conference on Statistics and its Applications</span>, “Quality Data and Appropriate Statistical Methods for Prosperous Nepal”, Kirtipur, Kathmandu</div></div>
 </section>
 
 <section>
-  <h2>Research Profiles &amp; Identifiers</h2>
-  <div class="profiles">
-    <div><b>ORCID</b><span><a href="https://orcid.org/0000-0002-9390-8215">0000-0002-9390-8215</a></span></div>
-    <div><b>Scopus Author ID</b><span>57207742220</span></div>
-    <div><b>ResearcherID</b><span>Q-5851-2019</span></div>
-    <div><b>Google Scholar</b><span><a href="https://scholar.google.com/citations?user=HeJ3_HEAAAAJ&hl=en">user HeJ3_HEAAAAJ</a></span></div>
-    <div><b>ResearchGate</b><span><a href="https://www.researchgate.net/profile/Srijan-Shrestha-3">profile/Srijan-Shrestha-3</a></span></div>
-    <div><b>SciProfiles</b><span><a href="https://sciprofiles.com/profile/SrijanLalShrestha">SrijanLalShrestha</a></span></div>
-    <div><b>LinkedIn</b><span><a href="https://www.linkedin.com/in/srijan-lal-shrestha-4b017637/">srijan-lal-shrestha-4b017637</a></span></div>
-    <div><b>Faculty page</b><span><a href="https://tucds.edu.np/faculty-staff/">tucds.edu.np/faculty-staff</a></span></div>
-    <div><b>ScholarGPS</b><span><a href="https://scholargps.com/scholars/57463290048763/srijan-lal-shrestha">ID 57463290048763</a></span></div>
-    <div><b>AD Scientific Index</b><span><a href="https://adscientificindex.com/scientist/srijan-lal-shrestha/5094232">ID 5094232</a></span></div>
-  </div>
+  <h2>Collaborations</h2>
+  <p>WHO Urban Health Initiative; Nepal Health Research Council; Nepal Academy of Science and Technology; Ministry of Women, Children and Senior Citizens, Government of Nepal; co-authors at Harvard University, the University of Maryland and Kathmandu University.</p>
 </section>
 
-<!-- ================= PHOTOS & PROFILES ================= -->
-<section class="page-break">
-  <h2>Academic Life in Pictures</h2>
-  <div class="photos">
-    <figure><img src="../frontend/assets/images/awards/nabil_award.jpg" alt="" style="object-position:50% 30%"><figcaption><b>NABIL Science and Technology Award</b>Nepal Academy of Science and Technology · December 2016</figcaption></figure>
-    <figure><img src="../frontend/assets/images/awards/bidhya_bhushan.jpg" alt="" style="object-position:60% 35%"><figcaption><b>Nepal Bidhya Bhushan “KA”</b>Conferred by the President of Nepal · February 2009</figcaption></figure>
-    <figure><img src="../frontend/assets/images/gallery/conferences/phd_festival_2023_plenary.jpg" alt="" style="object-position:50% 50%"><figcaption><b>Plenary session, PhD Festival 2080</b>“Insights to Features of Nonparametric Regression Modeling with Illustrations” · October 2023</figcaption></figure>
-    <figure><img src="../frontend/assets/images/gallery/milestones/njs_vol7_release_2024.jpg" alt="" style="object-position:50% 50%"><figcaption><b>Nepalese Journal of Statistics, Vol. 7 release</b>Central Department of Statistics, TU, Kirtipur · 12 March 2024</figcaption></figure>
-    <figure><img src="../frontend/assets/images/gallery/conferences/national_conference_2017.jpg" alt="" style="object-position:50% 30%"><figcaption><b>National Conference on Statistics and its Applications</b>Kirtipur, Kathmandu · 3–4 September 2017</figcaption></figure>
-    <figure><img src="../frontend/assets/images/gallery/milestones/tu_long_service_certificate.jpg" alt="" style="object-position:50% 30%"><figcaption><b>Long Service Certificate</b>Tribhuvan University</figcaption></figure>
-  </div>
-  <div class="closing">
-    <div>Central Department of Statistics, Institute of Science and Technology<br>Tribhuvan University, Kirtipur, Kathmandu, Nepal</div>
-    <div class="sig">Srijan Lal Shrestha</div>
+<section>
+  <h2>Professional Membership</h2>
+  <div class="row"><div class="d">Present</div><div>Member, <span class="w">Nepal Statistical Society</span></div></div>
+</section>
+
+<section>
+  <h2>Research Metrics and Identifiers</h2>
+  <table class="kv">
+    <tr><td>Citations</td><td>457 (207 in the last six years), AD Scientific Index 2026</td></tr>
+    <tr><td>h-index / i10-index</td><td>9 / 9 (7 / 7 in the last six years)</td></tr>
+    <tr><td>ORCID</td><td>0000-0002-9390-8215</td></tr>
+    <tr><td>Scopus Author ID</td><td>57207742220</td></tr>
+    <tr><td>Web of Science ResearcherID</td><td>Q-5851-2019</td></tr>
+    <tr><td>Google Scholar</td><td><a href="https://scholar.google.com/citations?user=HeJ3_HEAAAAJ&hl=en">scholar.google.com/citations?user=HeJ3_HEAAAAJ</a></td></tr>
+    <tr><td>ResearchGate</td><td><a href="https://www.researchgate.net/profile/Srijan-Shrestha-3">researchgate.net/profile/Srijan-Shrestha-3</a></td></tr>
+  </table>
+</section>
+
+<section class="declaration">
+  <h2>Declaration</h2>
+  <p>I hereby declare that the information given above is true and correct to the best of my knowledge.</p>
+  <div class="sign">
+    <div>Date: ____________________</div>
+    <div class="line">Prof. Dr. Srijan Lal Shrestha</div>
   </div>
 </section>
 
