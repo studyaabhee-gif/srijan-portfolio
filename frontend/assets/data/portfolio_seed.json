@@ -20,7 +20,8 @@
     "bio": [
       "Prof. Dr. Srijan Lal Shrestha is Professor of Statistics and former Head of the Central Department of Statistics (CDS), Institute of Science and Technology, Tribhuvan University, where he has taught since 1992 and has been Professor since 2013. He earned his PhD in Statistics from TU in 2007, and since 2022 has also been Adjunct Faculty at Chandigarh University, India.",
       "His research applies environmetrics, generalized linear models, time series and distributed lag methods to air pollution, climate-sensitive disease, drought and rainfall risk, population and human development in Nepal. He has authored or co-authored around three dozen research papers and reports, working with the WHO Urban Health Initiative, the Nepal Health Research Council and the Nepal Academy of Science and Technology. He has supervised one PhD to completion and co-supervised two more.",
-      "He is Editor-in-Chief of the Nepalese Journal of Statistics, an Academic Editor of PLOS ONE and a member of the IoST Ethical Review Committee. He received the NABIL Science and Technology Award (2016) and the Nepal Bidhya Bhushan \"KA\" (2009), and held a NAST Climate Change Research Grant (2014–2016)."
+      "He is Editor-in-Chief of the Nepalese Journal of Statistics, an Academic Editor of PLOS ONE and a member of the Governing Board of the School of Mathematical Sciences, TU. He received the NABIL Science and Technology Award (2016) and the Nepal Bidhya Bhushan \"KA\" (2009), and held a NAST Climate Change Research Grant (2014–2016).",
+      "He is presently a Senior Visiting Professor in the MPhil programmes of Purbanchal University, Mid-West University and the School of Management, Tribhuvan University, and in the PhD programme of IoST, Tribhuvan University."
     ],
     "badges": [
       "Professor of Statistics • Tribhuvan University",
@@ -64,14 +65,20 @@
       {"value": "NABIL & Bidhya Bhushan", "label": "Laureate"}
     ],
     "appointments": [
-      {"role": "Professor of Statistics", "organization": "Central Department of Statistics, IoST, Tribhuvan University", "period": "2013 – Present", "current": true},
+      {"role": "Professor of Statistics", "organization": "Tribhuvan University", "period": "2013 – Present", "current": true},
       {"role": "Editor-in-Chief", "organization": "Nepalese Journal of Statistics (NJS)", "period": "Present", "current": true},
       {"role": "Academic Editor", "organization": "PLOS ONE, Public Library of Science (invited)", "period": "Dec 2022 – Present", "current": true},
       {"role": "Adjunct Faculty", "organization": "Chandigarh University, Mohali, Punjab, India (invited)", "period": "Feb 2022 – Present", "current": true},
-      {"role": "Member, Ethical Review Committee", "organization": "Institute of Science and Technology (IoST), Tribhuvan University", "period": "Present", "current": true},
+      {"role": "Senior Visiting Professor, MPhil Programmes", "organization": "Purbanchal University · Mid-West University · School of Management, Tribhuvan University", "period": "Present", "current": true},
+      {"role": "Senior Visiting Professor, PhD Programme", "organization": "Institute of Science and Technology (IoST), Tribhuvan University", "period": "Present", "current": true},
+      {"role": "Member, Ethical Review Committee", "organization": "Institute of Science and Technology (IoST), Tribhuvan University", "period": "Former", "current": false},
       {"role": "Member", "organization": "Nepal Statistical Society", "period": "Present", "current": true},
       {"role": "Head of Department", "organization": "Central Department of Statistics (CDS), Tribhuvan University", "period": "Former", "current": false},
-      {"role": "Member, Editorial Board", "organization": "Journal of Institute of Science and Technology, IoST, TU", "period": "Former", "current": false}
+      {"role": "Member, Editorial Board", "organization": "Journal of Institute of Science and Technology, IoST, TU", "period": "Former", "current": false},
+      {"role": "Chairperson, Central Department Research Committee (CDRC)", "organization": "Central Department of Statistics, Tribhuvan University", "period": "Former", "current": false},
+      {"role": "Member, Research Committee", "organization": "Institute of Science and Technology (IoST), Tribhuvan University", "period": "Former", "current": false},
+      {"role": "Member, Statistics Subject Committee", "organization": "Tribhuvan University", "period": "Former", "current": false},
+      {"role": "Member, Governing Board", "organization": "School of Mathematical Sciences, Tribhuvan University", "period": "Present", "current": true}
     ],
     "education": [
       {"degree": "PhD", "field": "Statistics", "institution": "Tribhuvan University, Nepal (2007)"}
